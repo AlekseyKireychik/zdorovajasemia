@@ -1,0 +1,23 @@
+.header {
+    background-color: inherit;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.headerTop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav {
+    color: #000;
+}

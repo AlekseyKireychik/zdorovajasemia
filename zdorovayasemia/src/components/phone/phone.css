@@ -1,0 +1,23 @@
+.phoneWrap {
+    padding-top: 25px;
+}
+
+.phoneList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.phoneItem {
+
+}
+
+.phoneLink {
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #424242;
+}
+.phoneLink:hover {
+    color: #19815a;
+ }
