@@ -8,7 +8,7 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> zd s.
+          Edit <code>src/App.js</code> test.
         </p>
         <a
           className="App-link"
