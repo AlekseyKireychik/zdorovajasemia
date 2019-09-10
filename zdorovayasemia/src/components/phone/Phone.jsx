@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './phone.css';
+import './Phone.css';
 
 const Phone = () => {
     return (

@@ -1,0 +1,8 @@
+.mainBanner {   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}

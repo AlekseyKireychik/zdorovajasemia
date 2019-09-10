@@ -11,11 +11,17 @@
     margin: 0 auto;
 }
 
-.headerTop {
+.headerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headerContacts{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 100%;
 }
 
 nav {
