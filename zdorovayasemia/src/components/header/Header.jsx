@@ -16,13 +16,7 @@ const Header = () => {
                     <div className="headerContacts"> 
                         <Map />   
                         <Phone />
-                    </div>            
-                    <ul>
-                        <li>пункт1</li>
-                        <li>пункт1</li>
-                        <li>пункт1</li>
-                        <li>пункт1</li>
-                    </ul>
+                    </div> 
                 </div>  
             </nav>
             <Banner />

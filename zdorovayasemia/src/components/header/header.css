@@ -7,7 +7,6 @@
     justify-content: center;
     color: white;
     text-align: center;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -16,14 +15,13 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    color: #000;
+    max-width: 1200px;
+    border-bottom: 1px solid #f2f2f2;
 }
 
 .headerContacts{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-}
-
-nav {
-    color: #000;
 }
