@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
 import Header from './components/header/Header';
-import Main from './components/main/Main';
+import Home from './components/pages/home/Home';
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Home />
     </div>
   );
 }

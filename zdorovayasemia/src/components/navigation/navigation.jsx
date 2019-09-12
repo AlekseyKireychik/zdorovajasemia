@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './navigation.css';
+import style from  './navigation.module.css';
 
 const Navigation = () => (
-  <div className="navigation">
-    <div className="logoWrapper">
+  <div className={style.navigation}>
+    <div className={style.logoWrapper}>
       <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-card.png" height="60" alt="logo" />
     </div>
     <nav>
-      <ul className="nav">
+      <ul className={style.nav}>
         <li><NavLink exact to="/">Home</NavLink></li>
         <li><NavLink to="/button">Button</NavLink></li>
         <li><NavLink to="/button-group">Button Group</NavLink></li>

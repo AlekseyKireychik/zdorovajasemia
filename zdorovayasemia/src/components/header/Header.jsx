@@ -1,25 +1,23 @@
 import React, {Component} from 'react';
-import './Header.css';
+import style from  './Header.module.css';
 import Logo from '../logo/Logo';
 import Map from '../map/Map';
 import Phone from '../phone/Phone';
-import Banner from '../banner/Banner';
 
 const Header = () => {
     return (
-        <header className="header">
-            <nav className="headerNav">
-                <div className="headerLogo">
+        <header className={style.header}>
+            <nav className={style.headerNav}>
+                <div className={style.headerLogo}>
                     <Logo />
                 </div>
-                <div className="headerRight"> 
-                    <div className="headerContacts"> 
+                <div className={style.headerRight}> 
+                    <div className={style.headerContacts}> 
                         <Map />   
                         <Phone />
                     </div> 
                 </div>  
-            </nav>
-            <Banner />
+            </nav>            
         </header>
     );
 }

@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import './Banner.css';
-import Slideshow from '../slide/Slide';
+import style from './Banner.module.css';
+import Slideshow from '../slide/Slide.jsx';
 
 let Background = "..//images/detsky-massag-bg.jpg";
 
 const Banner = () => {
     return (
-        <div className="banner" style={{backgroundImage: `url(${Background})`}}>
-            <div className="bannerCaption">
-                <div className="bannerSlide">                
+        <div className={style.banner} style={{backgroundImage: `url(${Background})`}}>
+            <div className={style.bannerCaption}>
+                <div className={style.bannerSlide}>                
                     <Slideshow />
                 </div>
             </div>

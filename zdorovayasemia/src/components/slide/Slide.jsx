@@ -1,6 +1,6 @@
 import React from 'react'
 import { Slide } from 'react-slideshow-image'
-import './Slide.css'
+import style from  './Slide.module.css'
 
 const proprieties = {
     duration: 5000,
@@ -12,7 +12,7 @@ const proprieties = {
 
 const Slideshow = () => {
     return (
-        <div className="containerSlide">
+        <div className={style.containerSlide}>
             <Slide {...proprieties}>
                 <div className="each-slide">
                     <span>Мы хотим и можем Вам помочь</span>

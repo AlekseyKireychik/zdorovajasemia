@@ -4,7 +4,9 @@
     background-position: center;
     height: calc(100vh - 141px);
     width: 100%;
-    position: relative;
+    position: relative;    
+    color: #f4f4f4;
+    border-top: 1px solid #f4f4f4;
 }
 
 .bannerCaption {
@@ -12,7 +14,7 @@
     text-align: center;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0;    
     background-color: rgba(67, 164, 0, 0.65);
     padding: 60px 40px 60px 0;
 }

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import './Logo.css';
+import style from  './Logo.module.css';
 
 const Logo = () => {
     
     return (
-        <div className="logoWrap">
-            <a className="logoLink" src="#">
-                <img className="logoImg" src='..//images/logo.jpg'></img>
+        <div className={style.logoWrap}>
+            <a className={style.logoLink} src="#">
+                <img className={style.logoImg} src='..//images/logo.jpg'></img>
             </a>
         </div>        
     );
