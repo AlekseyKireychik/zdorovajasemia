@@ -1,0 +1,15 @@
+.greeting {
+    padding: 50px 0 50px;
+    text-align: center;
+    color: #424242;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 48px;
+}
+.text {
+    font-size: 16px;
+    line-height: 18px;
+    
+}

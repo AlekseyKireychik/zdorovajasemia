@@ -1,11 +1,18 @@
 import React from 'react'
 import style from  './Home.module.css'
-import Main from '../../main/Main';
+import Banner from '../../banner/Banner';
+import Greeting from '../../greeting/Greeting'
 
 const Home = (props) => {
     return(
-        <div>
-            <Main />
+        <div className={style.home}>
+            
+            <Banner />
+            <Greeting 
+                title="Массажно-оздоровительный центр «Здоровая семья»!" 
+                text="Мы рады приветствовать Вас
+                Мы рады приветствовать Вас dfdsf" />
+
         </div>
     );
 }
