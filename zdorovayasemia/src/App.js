@@ -13,7 +13,10 @@ const App = () => {
       <div className="App">
         <Header />
         <main>
-          <Route path='/' component={Home}/>
+          <Route path='/home' component={Home}/>
+          <Route path='/about' component={About}/>
+          <Route path='/services' component={Services}/>
+          <Route path='/home' component={Home}/>
           <Route path='/about' component={About}/>
           <Route path='/services' component={Services}/>
         </main>

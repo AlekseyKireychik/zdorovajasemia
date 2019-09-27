@@ -10,18 +10,14 @@ const Header = () => {
     return (
         <header className={style.header}>
             <nav className={style.headerNav}>
-                <div className={style.headerLogo}>
-                    <Logo />
-                </div>
-                <div className={style.headerRight}> 
+                <div className={style.headerTop}> 
+                    <Logo />    
                     <div className={style.headerContacts}> 
                         <Map />   
                         <Phone />
                     </div> 
-                    <div className={style.headerContacts}>                     
-                        <Navigation /> 
-                    </div> 
-                </div>  
+                </div>                     
+                <Navigation /> 
             </nav>            
         </header>
     );

@@ -1,6 +1,5 @@
 .navigation {
-  background-color: #f2f2f2;
-  box-shadow: 1px 1px 10px #777;
+  width: 100%;
 }
 
 .nav {
@@ -8,7 +7,8 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav li {
@@ -17,17 +17,17 @@
 }
 
 .nav a {
-  color: #fff;
+  color: #3eb75d;
   text-decoration: none;
   display: flex;
   height: 100%;
   width: 100%;
   align-items: center;
   justify-content: flex-start;
-  padding: 15px 0 15px 30px;
+  padding: 15px 30px 15px 30px;
   box-sizing: border-box;
-  border-left: 3px solid transparent;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .nav a:hover,

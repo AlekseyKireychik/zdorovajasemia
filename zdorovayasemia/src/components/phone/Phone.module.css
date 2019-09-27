@@ -1,7 +1,7 @@
 .phoneWrap {
     margin-top: 15px;
     padding-left: 35px;
-    border-left: 2px solid #43A400;
+    border-left: 2px solid #3eb75d;;
 }
 
 .phoneList {
@@ -17,5 +17,5 @@
     color: #424242;
 }
 .phoneLink:hover {
-    color: #43A400;
+    color: #3eb75d;
  }
