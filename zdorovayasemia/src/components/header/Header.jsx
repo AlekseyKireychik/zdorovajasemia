@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import style from  './Header.module.css';
 import Logo from '../logo/Logo';
 import Map from '../map/Map';
 import Phone from '../phone/Phone';
+import Navigation from '../navigation/Navigation';
+import style from  './Header.module.css';
+import { Router } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -15,6 +17,9 @@ const Header = () => {
                     <div className={style.headerContacts}> 
                         <Map />   
                         <Phone />
+                    </div> 
+                    <div className={style.headerContacts}>                     
+                        <Navigation /> 
                     </div> 
                 </div>  
             </nav>            

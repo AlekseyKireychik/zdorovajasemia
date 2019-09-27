@@ -4,7 +4,8 @@ import style from  './Services.module.css'
 const Services = (props) => {
     return(
         <div>
-            услуги
+            <h1>Услуги</h1>
+            коврики массаж и тд
         </div>
     );
 }

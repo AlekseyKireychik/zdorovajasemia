@@ -1,9 +1,5 @@
-.logoWrapper {
-  text-align: center;
-}
-
 .navigation {
-  background-color: #D43728;
+  background-color: #f2f2f2;
   box-shadow: 1px 1px 10px #777;
 }
 
@@ -18,7 +14,6 @@
 .nav li {
   display: flex;
   align-items: center;
-  flex: 1 0 100%;
 }
 
 .nav a {
