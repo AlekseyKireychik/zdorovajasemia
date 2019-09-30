@@ -4,6 +4,10 @@ import Header from './components/header/Header';
 import Home from './components/pages/home/Home';
 import About from './components/pages/about/About';
 import Services from './components/pages/services/Services';
+import Products from './components/pages/products/Products';
+import Team from './components/pages/team/Team';
+import Reviews from './components/pages/reviews/Reviews';
+import Contacts from './components/pages/contacts/Contacts';
 import Footer from './components/footer/Footer';
 import {BrowserRouter, Route} from 'react-router-dom';
 
@@ -13,12 +17,13 @@ const App = () => {
       <div className="App">
         <Header />
         <main>
-          <Route path='/home' component={Home}/>
+          <Route exact path='/' component={Home}/>
           <Route path='/about' component={About}/>
           <Route path='/services' component={Services}/>
-          <Route path='/home' component={Home}/>
-          <Route path='/about' component={About}/>
-          <Route path='/services' component={Services}/>
+          <Route path='/products' component={Products}/>
+          <Route path='/team' component={Team}/>
+          <Route path='/reviews' component={Reviews}/>
+          <Route path='/contacts' component={Contacts}/>
         </main>
         <Footer />
       </div>
