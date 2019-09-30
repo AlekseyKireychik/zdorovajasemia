@@ -1,20 +1,21 @@
 import React from 'react'
 import Map from '../map/Map';
 import Phone from '../phone/Phone';
-import './Footer.css'
+import style from './Footer.module.css'
 
 const Footer = (props) => {
+
     return (
         <footer>
-            <div className="container">
-                <ul>
-                    <li>
-                        <Map />   
+            <div className={style.container}>
+                <ul className={style.list}>
+                    <li className={style.item}>
+                        <Map />
                     </li>
-                    <li>                        
+                    <li className={style.item}>
                         <Phone />
                     </li>
-                    <li>seti</li>
+                    <li className={style.item}>seti</li>
                 </ul>
                 <span>Массажно-оздоровительный центр «Здоровая семья»</span>
             </div>
