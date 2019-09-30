@@ -5,7 +5,7 @@ import style from './Navigation.module.css';
 const Navigation = () => (
   <div className={style.navigation}>
       <ul className={style.nav}>
-        <li><NavLink to="/" activeClassName={style.active}>Главная</NavLink></li>
+        <li><NavLink to="/">Главная</NavLink></li>
         <li><NavLink to="/about" activeClassName={style.active}>О нас</NavLink></li>
         <li><NavLink to="/services" activeClassName={style.active}>Услуги</NavLink></li>
         <li><NavLink to="/products" activeClassName={style.active}>Массажные коврики</NavLink></li>        

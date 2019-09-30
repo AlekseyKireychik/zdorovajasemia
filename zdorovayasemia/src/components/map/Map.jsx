@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import style from  './Map.module.css';
+import './Map.css';
 
 const Map = () => {
 
     return (
-        <div className={style.addresWrap}>
-            <span className={style.addres}>г.Брест, ул.Орджоникидзе, 39</span>
+        <div className='addresWrap'>
+            <span className='addres'>г.Брест, ул.Орджоникидзе, 39</span>
         </div>        
     );
     
