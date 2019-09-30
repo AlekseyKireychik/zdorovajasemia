@@ -7,12 +7,25 @@ footer {
     text-align: center;
 }
 
-footer .list {
-    list-style: none;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+} 
 
+.list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
 }
-footer .link:hover {
-    /* color: #8fbf4d; */
-    color: red;
+
+footer {
+    font: 15px/17px 'Open Sans';
+    color: #80838d;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    color: #8fbf4d;
     transition: all 0.25s ease;
 }
