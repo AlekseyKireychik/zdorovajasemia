@@ -11,23 +11,20 @@ const proprieties = {
   arrows: false
 };
 
-const Slideshow = props => {
-  let slideContent = [
+const Slideshow = (props) => {
+  let slideElems = [
     "Мы хотим и можем Вам помочь",
     "Более 5 лет работаем для Вас",
     "Высококлассные специалисты",
     "Современные методики",
     "Пн-Пт: 9.00-21.00  Сб: 9.00-15.00"
   ];
-//   let slideElem = slideContent.map((item) =>{
-//     <SlideItem text={item} />
-//   });
+
+  let mySlideElems = slideElems.map(el => <SlideItem text={el} />);
+
   return (
     <div className={style.containerSlide}>
-      <Slide {...proprieties}>
-        <SlideItem text="Мы хотим и можем Вам помочь" />
-        <SlideItem text="Мы хотим и можем Вам помочь" />
-      </Slide>
+      <Slide {...proprieties}>{mySlideElems}</Slide>
     </div>
   );
 };
