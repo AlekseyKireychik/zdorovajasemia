@@ -1,0 +1,28 @@
+.typesmassage {
+  color: #424242;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.title {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 28px;
+  line-height: 36px;
+}
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.item {
+  flex-grow: 1;
+}
+.subtitle {
+}
+.description {
+  max-width: 400px;
+  text-align: justify
+}

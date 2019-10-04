@@ -1,0 +1,48 @@
+.advantages {
+  color: #424242;
+  background-color: #f2f2f2;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+}
+.content {
+  flex-basis: 50%;
+}
+.bgimg {
+  flex-basis: 50%;
+  background-image: url(/images/massage-3795692_1280.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 450px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 25px;
+  margin: 35px 0;
+  border-left: 2px solid #3eb75d;
+}

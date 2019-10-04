@@ -1,0 +1,28 @@
+.item {
+}
+.link {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.img {
+  max-width: 380px;
+}
+.description {
+  font-size: 18px;
+  line-height: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  color: #fff;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
