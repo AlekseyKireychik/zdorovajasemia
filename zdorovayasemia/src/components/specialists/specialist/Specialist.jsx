@@ -4,7 +4,7 @@ import style from "./Specialist.module.css";
 const Specialist = props => {
   return (
     <div className={style.wrap}>
-      <img src={props.image} className={style.img}></img>
+      <img src={props.image} className={style.img} alt={props.name}></img>
       <span className={style.title}>{props.name}</span>
       <span className={style.description}>{props.description}</span>
     </div>
