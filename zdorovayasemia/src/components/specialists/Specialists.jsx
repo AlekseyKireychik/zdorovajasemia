@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Specialists.module.css";
+import { NavLink } from 'react-router-dom';
 import Specialist from "./specialist/Specialist";
 
 const Specialists = props => {
@@ -7,9 +8,9 @@ const Specialists = props => {
     <section className={style.specialists}>
       <div className={style.container}>
         <h2 className={style.title}>Наши мастера</h2>
-        <a className={style.link} href="/">
-          Посмотреть
-        </a>
+        <NavLink className={style.link} to="team">
+          Посмотреть все
+        </NavLink>
       </div>
       <ul className={style.container}>
         <Specialist

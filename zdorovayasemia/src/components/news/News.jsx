@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Newspost from "./newspost/Newspost";
 import style from "./News.module.css";
 
@@ -7,9 +8,9 @@ const News = props => {
     <section className={style.news}>
       <div className={style.container}>
         <h2 className={style.title}>Наши новости</h2>
-        <a className={style.link} href="/">
-          Посмотреть
-        </a>
+        <NavLink className={style.link} to="blog">
+          Посмотреть все
+        </NavLink>
       </div>
       <ul className={style.container}>
         <Newspost

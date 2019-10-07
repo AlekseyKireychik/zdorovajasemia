@@ -1,31 +1,59 @@
 .header {
-    background-color: inherit;
-    display: flex;
-    font-family: 'Open Sans', sans-serif;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
+  background-color: inherit;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .headerNav {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-    color: #000;
-    max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  color: #000;
+  max-width: 1200px;
 }
 
 .headerTop {
-    display: flex; 
-    justify-content: space-between;
-    width: 100%;
-
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.headerContacts{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+.headerContacts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.phoneList {
+  list-style: none;
+  padding: 0;
+  padding-left: 35px;
+  margin: 0;
+  margin-top: 15px;
+  border-left: 2px solid #3eb75d;
+}
+.phoneList a {
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #424242;
+}
+.phoneList a:hover {
+  color: #3eb75d;
+}
+
+.adress {
+  margin-top: 15px;
+  margin-right: 35px;
+}
+
+.adress span {
+  font-size: 16px;
+  line-height: 26px;
+  color: #424242;
 }

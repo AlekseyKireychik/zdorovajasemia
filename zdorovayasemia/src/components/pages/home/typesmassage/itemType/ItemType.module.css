@@ -1,0 +1,11 @@
+.item {
+  flex-grow: 1;
+  text-align: center;
+}
+.subtitle {
+}
+.description {
+  max-width: 400px;
+  text-align: justify;
+  margin: 0 auto;
+}

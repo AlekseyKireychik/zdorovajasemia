@@ -1,15 +1,18 @@
-import React, {Component} from 'react';
-import style from  './Logo.module.css';
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import style from "./Logo.module.css";
 
 const Logo = () => {
-    
-    return (
-        <div className={style.logoWrap}>
-            <a className={style.logoLink} src="/">
-                <img className={style.logoImg} src='..//images/logo.jpg'></img>
-            </a>
-        </div>        
-    );
-
-}
+  return (
+    <div className={style.logoWrap}>
+      <NavLink to="/" className={style.logoLink}>
+        <img
+          className={style.logoImg}
+          src="..//images/logo.jpg"
+          alt="Массажно-оздоровительный центр «Здоровая семья»"
+        ></img>
+      </NavLink>
+    </div>
+  );
+};
 export default Logo;
