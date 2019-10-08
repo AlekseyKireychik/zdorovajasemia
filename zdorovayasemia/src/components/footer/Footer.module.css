@@ -1,31 +1,51 @@
 footer {
-    background-color: #464d54;
-    color: #80838d;
-    font-size: 17px;
-    line-height: 18px;
-    padding: 80px 0;
-    text-align: center;
+  background-color: #464d54;
+  color: #80838d;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 50px 0 25px;
 }
-
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-} 
-
-.list {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.adresslist {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 350px;
+  text-align: left;
+}
+.adresslist span {
+  padding-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.adresslist span:nth-child(1) {
+  text-transform: uppercase;
+}
+.contactList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-footer {
-    font: 15px/17px 'Open Sans';
-    color: #80838d;
-    text-transform: uppercase;
+.contactList a {
+  font-size: 18px;
+  line-height: 26px;
+  color: #80838d;
+  transition: all 0.25s ease;
+  text-decoration: none;
 }
-
-.link:hover {
-    color: #8fbf4d;
-    transition: all 0.25s ease;
+.contactList a:hover {
+  color: #8fbf4d;
+  transition: all 0.25s ease;
 }
