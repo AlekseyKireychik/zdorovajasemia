@@ -4,6 +4,7 @@ import Phone from "../phone/Phone";
 import Email from "../email/Email";
 import Social from "../social/Social";
 import Icon from "../icon/Icon";
+import ComapanyName from "../companyName/CompanyName";
 import style from "./Footer.module.css";
 
 const Footer = props => {
@@ -11,32 +12,33 @@ const Footer = props => {
     <footer>
       <div className={style.container}>
         <div className={style.adresslist}>
-          <span>Массажно-оздоровительный центр «Здоровая семья»</span>
+          <ComapanyName title="Массажно-оздоровительный центр «Здоровая семья»" />
           <div className={style.adressItem}>
-            <Icon linkImg="/images/icons/location-pin.svg" altText="Адрес" />
+            <Icon src="/images/icons/location-pin.svg" alt="Адрес" />
             <Adress adress="г.Брест, ул.Орджоникидзе, 39" />
           </div>
         </div>
         <ul className={style.contactList}>
           <li className={style.contactItem}>
-            <Icon linkImg="/images/icons/mail.svg" altText="Почтовый адрес" />
+            <Icon
+              width="25"
+              src="/images/icons/mail.svg"
+              alt="Почтовый адрес"
+            />
             <Email email="zdorovayasemia@gmail.com" />
           </li>
           <li className={style.contactItem}>
-            <Icon linkImg="/images/icons/phone.svg" altText="Телефон" />
+            <Icon src="/images/icons/phone.svg" alt="Телефон" />
             <Phone numberhref="+375298296956" number="+375 (29) 829 69 56" />
           </li>
           <li className={style.contactItem}>
-            <Icon linkImg="/images/icons/phone.svg" altText="Телефон" />
+            <Icon src="/images/icons/phone.svg" alt="Телефон" />
             <Phone numberhref="+375162534895" number="+375 (16) 253 48 95" />
           </li>
         </ul>
         <ul className={style.socialList}>
           <li className={style.socialItem}>
-            <Social 
-              link="#" 
-              linkImg="/images/icons/vk.svg" 
-              nameImg="vk" />
+            <Social link="#" linkImg="/images/icons/vk.svg" nameImg="vk" />
           </li>
           <li className={style.socialItem}>
             <Social
@@ -46,13 +48,16 @@ const Footer = props => {
             />
           </li>
           <li className={style.socialItem}>
-            <Social
-              link="#"
-              linkImg="/images/icons/ok.svg"
-              nameImg="ok"
-            />
+            <Social link="#" linkImg="/images/icons/ok.svg" nameImg="ok" />
           </li>
         </ul>
+      </div>
+      <div className={style.container}>
+        <span className={style.copir}>
+          &copy;
+          <span>2019 </span>
+          <ComapanyName title="Массажно-оздоровительный центр «Здоровая семья»" />
+        </span>
       </div>
     </footer>
   );

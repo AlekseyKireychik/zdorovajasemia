@@ -3,7 +3,7 @@ footer {
   color: #80838d;
   font-size: 17px;
   line-height: 18px;
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 .container {
   display: flex;
@@ -11,7 +11,14 @@ footer {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 10px;
+}
+.container:nth-child(1) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
   border-bottom: 1px solid #80838d;
 }
 .adresslist {
@@ -70,14 +77,21 @@ footer {
   width: 20px;
   margin-right: 10px;
 }
-.socialList{
+.socialList {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   list-style: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
-.socialItem{
-    margin-left: 10px;
-  }
+.socialItem {
+  margin-left: 10px;
+}
+.copir{
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+}

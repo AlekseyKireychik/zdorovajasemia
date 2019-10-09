@@ -1,0 +1,13 @@
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
