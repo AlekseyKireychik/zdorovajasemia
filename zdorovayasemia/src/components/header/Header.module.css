@@ -35,7 +35,7 @@
   padding-left: 35px;
   margin: 0;
   margin-top: 15px;
-  border-left: 2px solid #3eb75d;
+  border-left: 2px solid #95ce5a;
 }
 .phoneList a {
   font-size: 18px;
@@ -44,7 +44,7 @@
   color: #424242;
 }
 .phoneList a:hover {
-  color: #3eb75d;
+  color: #95ce5a;
 }
 
 .adress {
