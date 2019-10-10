@@ -10,14 +10,13 @@ const Form = () => {
       <Input id="name" error="Ваше имя" label="Ваше имя" type="text" />
       <Input id="email" error="Ваш email" label="Ваш email" type="email" />
       <Input id="tel" error="Ваш телефон" label="Ваш телефон" type="tel" />
-      <Textarea id="message" rows="5" label="Ваше сообщение"/>
+      <Textarea id="message" rows="5" label="Ваше сообщение" />
       <Input id="checkbox" onChange={() => {}} type="checkbox" />
-
       <Button
         children="Отправить"
         type="submit"
         onClick={() => {
-          console.log(`шмяк!!!!`);
+          alert(`шмяк!!!!`);
         }}
       />
     </form>

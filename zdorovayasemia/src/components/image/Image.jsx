@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import style from "./Image.module.css";
 
@@ -27,7 +27,7 @@ Image.propTypes = {
 Image.defaultProps = {
   src: "",
   alt: "Image name",
-  width: 600,
-  height: 600
+  width: 100,
+  height: 100
 };
 export default Image;

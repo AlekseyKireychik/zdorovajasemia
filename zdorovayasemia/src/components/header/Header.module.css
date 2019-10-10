@@ -7,7 +7,14 @@
   margin: 0 auto;
   z-index: 99;
 }
-
+.headerZD{
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  line-height: 62px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #95ce5a;
+}
 .headerNav {
   display: flex;
   align-items: center;

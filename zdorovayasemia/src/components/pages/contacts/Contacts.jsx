@@ -30,7 +30,7 @@ const Contacts = props => {
           <Form />
         </div>
         <div className={style.right}>
-          <Image width="600" alt="map"/>
+          <Image width="600" alt="map" />
         </div>
       </div>
     </div>

@@ -15,22 +15,30 @@ const Specialists = props => {
       <ul className={style.container}>
         <Specialist
           name="Дубовский Илья Олегович"
-          image="../../images/specialist.jpg"
+          src="../../images/specialist.jpg"
+          width="270"
+          height="inherit"
           description="Директор"
         />
         <Specialist
           name="Дубовский Илья Олегович"
-          image="../../images/specialist.jpg"
+          src="../../images/specialist.jpg"
+          width="270"
+          height="inherit"
           description="Директор"
         />
         <Specialist
           name="Дубовский Илья Олегович"
-          image="../../images/specialist.jpg"
+          src="../../images/specialist.jpg"
+          width="270"
+          height="inherit"
           description="Директор"
         />
         <Specialist
           name="Дубовский Илья Олегович"
-          image="../../images/specialist.jpg"
+          src="../../images/specialist.jpg"
+          width="270"
+          height="inherit"
           description="Директор"
         />
       </ul>

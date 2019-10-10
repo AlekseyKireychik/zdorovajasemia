@@ -1,10 +1,12 @@
 import React from "react";
+import InnerBanner from "../../innerBanner/InnerBanner";
+import Image from "../../image/Image";
 import style from "./Blog.module.css";
 
 const Blog = props => {
   return (
     <div>
-      <h1>Blog</h1>
+      <InnerBanner bgimage="..//images/blog.jpeg" children="Blog" />
     </div>
   );
 };

@@ -10,7 +10,8 @@ const Header = () => {
     <header className={style.header}>
       <nav className={style.headerNav}>
         <div className={style.headerTop}>
-          <Logo />
+          {/* <Logo /> */}
+         <span className={style.headerZD}>zdorovayasemia</span> 
           <div className={style.headerContacts}>
             <div className={style.adress}>
               <Adress adress="г.Брест, ул.Орджоникидзе, 39" />

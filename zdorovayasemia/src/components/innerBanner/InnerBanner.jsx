@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import NamePage from "./namePage/NamePage";
 import PropTypes from "prop-types";
 import style from "./InnerBanner.module.css";
