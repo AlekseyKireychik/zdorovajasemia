@@ -1,0 +1,36 @@
+textarea {
+  resize: none;
+  height: 145px;
+  width: 100%;
+  padding: 12px;
+  background: #f1f4f7;
+  border: 1px solid #dadee2;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.textareaWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.labelsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.textareaLabel {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.textareaRequired {
+  color: #777;
+}
+.textareaRequired,
+.textareaLabel {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}

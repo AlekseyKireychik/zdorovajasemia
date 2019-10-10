@@ -27,7 +27,7 @@ Image.propTypes = {
 Image.defaultProps = {
   src: "",
   alt: "Image name",
-  width: 100,
-  height: 100
+  width: 600,
+  height: 600
 };
 export default Image;

@@ -1,10 +1,39 @@
 .contacts {
-    margin-top: -192px;
+  margin-top: -192px;
 }
-.container{    
-    max-width: 1200px;
-    margin: 100px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+}
+.textWraper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Subtitle{
+  margin-top: 0;
+}
+.textWraper a {
+  color: #95ce5a;
+  font-size: 17px;
+  line-height: 26px;
+  text-decoration: none;
+}
+.textWraper a:hover {
+  text-decoration: underline;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: 60%;
 }
