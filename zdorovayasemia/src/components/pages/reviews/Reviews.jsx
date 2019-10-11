@@ -21,18 +21,18 @@ const Reviews = props => {
         <div className={style.review}>
           <div className={style.reviewInfo}>
             <div className={style.reviewLeft}>
-              <div className={style.reviewDate}>12.02.1111</div>
+              <div className={style.reviewDate}>08.12.2018</div>
               <div className={style.reviewName}>
                 <Image
                   width="14"
                   height="15"
                   src="..//images/icons/person.svg"
                 />
-                Имя Фамилия
+                Жанна
               </div>
             </div>
             <div className={style.reviewRang}>
-              <div className={style.reviewCounter}>4.0</div>
+              <div className={style.reviewCounter}>5</div>
               <div className={style.reviewStars}>
                 <Image
                   width="18"
@@ -57,20 +57,20 @@ const Reviews = props => {
                 <Image
                   width="18"
                   height="18"
-                  src="..//images/icons/star-favourite.svg"
+                  src="..//images/icons/star-active.svg"
                 />
               </div>
             </div>
           </div>
           <div className={style.reviewText}>
-            <span className={style.title}>
-              При закрытии вклада сняли проценты и часть депозита
-            </span>
+            <span className={style.title}>Обертывания и маски для лица</span>
             <p className={style.text}>
-              Пришлось обратиться в банк , чтоб выдали перевод КОРОНА,
-              продержали около часа, так как было передо мной 2 вип клиента, при
-              выдачи перевода требовали у меня разменные...читать далее(если
-              много текста)
+              Добрый вечер! Случайно нашла на страничке вк группу "Здоровая
+              семья". Сразу записалась, и попала к Магу и волшебнику Дмитрию.
+              Его ручки творят чудеса, обертывания и маски для лица делают кожу
+              бархатистой. Он действительно знает, что нужно моей коже))
+              Рекомендую всем девушкам, женщинам, и мужчинам тоже (массаж
+              восхитителен)!!!
             </p>
           </div>
           <span className={style.btn}>Комментировать</span>
@@ -78,7 +78,7 @@ const Reviews = props => {
         <div className={style.review}>
           <div className={style.reviewInfo}>
             <div className={style.reviewLeft}>
-              <div className={style.reviewDate}>12.02.1111</div>
+              <div className={style.reviewDate}>08.12.2018</div>
               <div className={style.reviewName}>
                 <Image
                   width="14"
