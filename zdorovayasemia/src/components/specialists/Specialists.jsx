@@ -27,20 +27,6 @@ const Specialists = props => {
           height="inherit"
           description="Директор"
         />
-        <Specialist
-          name="Дубовский Илья Олегович"
-          src="../../images/specialist.jpg"
-          width="270"
-          height="inherit"
-          description="Директор"
-        />
-        <Specialist
-          name="Дубовский Илья Олегович"
-          src="../../images/specialist.jpg"
-          width="270"
-          height="inherit"
-          description="Директор"
-        />
       </ul>
     </section>
   );

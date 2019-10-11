@@ -1,17 +1,14 @@
 import React from "react";
+import InnerBanner from "../../innerBanner/InnerBanner";
 import style from "./Products.module.css";
 
 const Products = props => {
   return (
     <div>
-      <h1>Продукты</h1>
-      <ul>
-        <li>Коврик 01</li>
-        <li>Коврик 01</li>
-        <li>Масажная подушка</li>
-        <li>Масажная подушка</li>
-        <li>Масажная подушка</li>
-      </ul>
+      <InnerBanner bgimage="..//images/product.jpg" children="Продукты" />
+      <div className={style.container}>
+        <h2>Продукты</h2>
+      </div>
     </div>
   );
 };

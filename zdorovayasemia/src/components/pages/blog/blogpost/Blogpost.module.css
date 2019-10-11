@@ -1,0 +1,14 @@
+.item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px 0;
+    border-bottom: 1px solid #E8ECEF;
+  }
+  .content {
+    padding-left: 50px;
+  }
+  .content h2 {
+    margin-top: 0;
+  }

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import style from "./Image.module.css";
 
-const Image = ({ src, alt, onClick, width, height, ...attrs }) => {
+const Image = ({ src, alt, width, height, ...attrs }) => {
   if (!src) {
     src = `https://via.placeholder.com/${width}x${height}`;
   }

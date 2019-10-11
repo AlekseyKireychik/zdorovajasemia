@@ -1,12 +1,15 @@
-import React from 'react';
-import style from  './About.module.css';
+import React from "react";
+import InnerBanner from "../../innerBanner/InnerBanner";
+import style from "./About.module.css";
 
-const About = (props) => {
-    return(
-        <div>
-            <h1> О нас</h1>доброжелательный коллектив.
-        </div>
-    );
-}
-
+const About = props => {
+  return (
+    <div>
+      <InnerBanner bgimage="..//images/aboutus.jpg" children="О нас" />
+      <div className={style.container}>
+        <h2>доброжелательный коллектив.</h2>
+      </div>
+    </div>
+  );
+};
 export default About;
