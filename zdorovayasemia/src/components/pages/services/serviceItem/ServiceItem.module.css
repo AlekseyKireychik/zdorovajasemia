@@ -1,0 +1,31 @@
+.item {
+  width: 100%;
+  list-style: none;
+}
+.link {
+  padding: 10px 5px;
+  display: flex;
+  width: 100%;
+  font-size: 22px;
+  line-height: 36px;
+  color: #95ce5a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.linkHover {
+  text-transform: uppercase;
+  opacity: 0;
+  transition: 0.3s;
+  margin-left: auto;
+}
+.link:hover {
+  background-color: #f2f2f2;
+  transition: 0.3s;
+}
+.link:hover .linkHover {
+  opacity: 1;
+  transition: 0.3s;
+}
+.link img {
+  margin-right: 15px;
+}
