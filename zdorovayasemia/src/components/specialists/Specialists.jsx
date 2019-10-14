@@ -9,7 +9,7 @@ const Specialists = props => {
       <div className={style.container}>
         <h2 className={style.title}>Наши мастера</h2>
         <NavLink className={style.link} to="team">
-          Посмотреть все
+          Посмотреть всех
         </NavLink>
       </div>
       <ul className={style.container}>
@@ -22,7 +22,7 @@ const Specialists = props => {
         />
         <Specialist
           name="Дубовский Илья Олегович"
-          src="../../images/specialist.jpg"
+          src="../../images/specialist02.jpg"
           width="270"
           height="inherit"
           description="Директор"

@@ -20,7 +20,7 @@ const Team = props => {
             />
             <Specialist
               name="Дубовский Илья Олегович"
-              src="../../images/specialist.jpg"
+              src="../../images/specialist02.jpg"
               width="270"
               height="inherit"
               position="Директор"
@@ -28,7 +28,7 @@ const Team = props => {
             />
             <Specialist
               name="Дубовский Илья Олегович"
-              src="../../images/specialist.jpg"
+              src="../../images/specialist03.jpg"
               width="270"
               height="inherit"
               position="Директор"
