@@ -7,7 +7,7 @@ import style from "./Contacts.module.css";
 
 const Contacts = props => {
   return (
-    <div className={style.contacts}>
+    <React.Fragment>
       <InnerBanner
         bgimage="..//images/mainpic-contacts.411999d7.jpg"
         children="Контакты"
@@ -33,7 +33,7 @@ const Contacts = props => {
           <Image width="600" alt="map" />
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

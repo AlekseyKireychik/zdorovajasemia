@@ -5,14 +5,14 @@ import style from "./Blog.module.css";
 
 const Blog = props => {
   return (
-    <div>
+    <React.Fragment>
       <InnerBanner bgimage="..//images/blog.jpeg" children="Блог" />
       <div className={style.container}>        
         <Blogpost width="300" height="300" children="Подробнее" />
         <Blogpost width="300" height="300" children="Подробнее" />
         <Blogpost width="300" height="300" children="Подробнее" />
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 export default Blog;

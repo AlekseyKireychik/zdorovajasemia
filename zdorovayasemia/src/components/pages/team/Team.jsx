@@ -5,7 +5,7 @@ import style from "./Team.module.css";
 
 const Team = props => {
   return (
-    <div>
+    <React.Fragment>
       <InnerBanner bgimage="..//images/team.jpg" children="Наша команда" />
       <div className={style.container}>
         <h2>Наши специалисты</h2>
@@ -36,7 +36,7 @@ const Team = props => {
             />
         </ul>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 export default Team;

@@ -5,20 +5,23 @@ import style from "./InnerBanner.module.css";
 
 const InnerBanner = ({ children, bgimage }) => {
   return (
-    <div className={style.banner} style={{ backgroundImage: `url(${bgimage})` }}>
+    <section
+      className={style.banner}
+      style={{ backgroundImage: `url(${bgimage})` }}
+    >
       <div className={style.container}>
         <NamePage children={children} />
       </div>
-    </div>
+    </section>
   );
 };
 InnerBanner.propTypes = {
   children: PropTypes.node,
-  bgimage: PropTypes.string,
+  bgimage: PropTypes.string
 };
 InnerBanner.defaultProps = {
   children: "",
-  bgimage: "",
+  bgimage: ""
 };
 
 export default InnerBanner;

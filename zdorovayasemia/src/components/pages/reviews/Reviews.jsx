@@ -6,7 +6,7 @@ import style from "./Reviews.module.css";
 
 const Reviews = props => {
   return (
-    <div>
+    <React.Fragment>
       <InnerBanner bgimage="..//images/mainpic.jpg" children="Отзывы" />
       <div className={style.container}>
         <div className={style.wrapTop}>
@@ -133,7 +133,7 @@ const Reviews = props => {
           <span className={style.btn}>Комментировать</span>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

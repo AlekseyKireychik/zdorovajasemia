@@ -2,7 +2,7 @@
   width: 100%;
   list-style: none;
 }
-.link {
+.btn {
   padding: 10px 5px;
   display: flex;
   width: 100%;
@@ -11,21 +11,22 @@
   color: #95ce5a;
   text-decoration: none;
   transition: 0.3s;
+  cursor: pointer;
 }
-.linkHover {
+.btnHover {
   text-transform: uppercase;
   opacity: 0;
   transition: 0.3s;
   margin-left: auto;
 }
-.link:hover {
+.btn:hover {
   background-color: #f2f2f2;
   transition: 0.3s;
 }
-.link:hover .linkHover {
+.btn:hover .btnHover {
   opacity: 1;
   transition: 0.3s;
 }
-.link img {
+.btn img {
   margin-right: 15px;
 }

@@ -4,7 +4,7 @@ import style from "./About.module.css";
 
 const About = props => {
   return (
-    <div>
+    <React.Fragment>
       <InnerBanner bgimage="..//images/aboutus.jpg" children="О нас" />
       <div className={style.container}>
         <h2>Уважаемые Дамы и Господа!</h2>
@@ -35,7 +35,7 @@ const About = props => {
         </ul>
         Система абонементов и скидок приятно Вас порадуют.
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 export default About;

@@ -9,7 +9,7 @@ import News from "../../news/News";
 
 const Home = props => {
   return (
-    <main className={style.home}>
+    <React.Fragment>
       <Banner />
       <Greeting
         title="Массажно-оздоровительный центр «Здоровая семья»!"
@@ -23,7 +23,7 @@ const Home = props => {
       <Specialists />
       <Typesmassage />
       <News />
-    </main>
+    </React.Fragment>
   );
 };
 

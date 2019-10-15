@@ -4,7 +4,7 @@ import style from "./Products.module.css";
 
 const Products = props => {
   return (
-    <div>
+    <React.Fragment>
       <InnerBanner bgimage="..//images/product.jpg" children="Продукты" />
       <div className={style.container}>
         <h2>Ортопедические товары</h2>
@@ -173,7 +173,7 @@ const Products = props => {
           <li>Стабилизирует сердечно-сосудистую систему.</li>
         </ul>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

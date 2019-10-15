@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import style from "./Icon.module.css";
 
 const Icon = ({ src, alt, onClick, width, disabled, ...attrs }) => {
-  const elemWidth = width ? { width: `${width}px` } : null;
+  const elemWidth = width ? { width: `${width}` } : null;
   return (
     <img
       className={style.icon}
@@ -19,7 +19,7 @@ Icon.propTypes = {
   alt: PropTypes.string,
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
-  width: PropTypes.number
+  width: PropTypes.string
 };
 
 Icon.defaultProps = {
