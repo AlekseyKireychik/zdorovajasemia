@@ -1,7 +1,7 @@
 import React from "react";
 import Icon from "../../../icon/Icon";
-import style from "./ServiceItem.module.css";
-const ServiceItem = (props, onClick) => {
+import style from "./ServiceItemBtn.module.css";
+const ServiceItemBtn = (props, onClick) => {
   return (
     <li className={style.item}>
       <span className={style.btn}>
@@ -13,4 +13,4 @@ const ServiceItem = (props, onClick) => {
   );
 };
 
-export default ServiceItem;
+export default ServiceItemBtn;

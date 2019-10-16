@@ -1,4 +1,4 @@
-.btn {
+.btnPrimary {
   padding: 14px 50px;
   cursor: pointer;
   background: #95CE5A;
@@ -10,17 +10,17 @@
   color: #fff;
   transition: .2s;
 }
-.btn:hover {
+.btnPrimary:hover {
   background: #8CC459;
   transition: .2s;
 }
-.btn:focus {
+.btnPrimary:focus {
   background: #95CE5A;
   border: 1px solid #333E50;
   color: #333E50;
   transition: .2s;
 }
-.btn:disabled {
+.btnPrimary:disabled {
   background: #ADB4BF;
   border: 1px solid #ADB4BF;
   box-shadow: none;

@@ -1,6 +1,6 @@
 import React from "react";
 import InnerBanner from "../../innerBanner/InnerBanner";
-import ServiceItem from "../services/serviceItem/ServiceItem";
+import ServiceItemBtn from "./serviceItem/ServiceItemBtn";
 import ServicesItemConten from "./servicesItemContent/ServicesItemContent";
 import style from "./Services.module.css";
 
@@ -132,7 +132,7 @@ const servicesDate = [
     id: 7,
     title: "Косметология",
     text: [
-      "Тщательно выбираете свою косметику? Этого же правила придерживаемся и мы.",
+      "Тщательно выбираете свою косметику? Этого же правила придерживаемся и мы. ",
       "Наш выбор сделан в пользу российской косметики «ARAVIA». Как знак качества - эту фирму выбирают десятки тысяч салонов красоты и косметологов.",
       "Натуральная косметика«ARAVIA» соответствует строгим мировым стандартам и подтверждена международным сертификатам «ECOCER».",
       "Косметика основана на натуральных биоактивных компонентах и работает как витамин для вашей кожи.",
@@ -160,7 +160,7 @@ const servicesDate = [
 ];
 const itemServiceTile = servicesDate.map(item => {
   return (
-    <ServiceItem
+    <ServiceItemBtn
       key={item.id}
       width="35px"
       children={item.title}

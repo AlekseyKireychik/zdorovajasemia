@@ -13,6 +13,7 @@ const Form = () => {
       <Textarea id="message" rows="5" label="Ваше сообщение" />
       <Input id="checkbox" onChange={() => {}} type="checkbox" />
       <Button
+        className="btnPrimary"
         children="Отправить"
         type="submit"
         onClick={() => {

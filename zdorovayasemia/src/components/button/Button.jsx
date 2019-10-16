@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import style from "./Button.module.css";
 
-const Button = ({ children, onClick, disabled, active, ...attrs }) => {
+const Button = ({ children, className, onClick, disabled, active, ...attrs }) => {
   const onClickAction = e => {
     if (disabled) {
       e.preventDefault();
@@ -11,10 +11,11 @@ const Button = ({ children, onClick, disabled, active, ...attrs }) => {
     }
   };
   const Tag = attrs.href ? "a" : "button";
+  const classes = `${className}` ? `${style.btnPrimary}` : `${style.btn}`;
   return (
     <Tag
       {...attrs}
-      className={style.btn}
+      className={`${classes}`}
       disabled={disabled}
       onClick={onClickAction}
     >
