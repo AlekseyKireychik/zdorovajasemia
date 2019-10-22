@@ -1,6 +1,39 @@
 .form{
+    flex-basis: 100%;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    flex-basis: 100%;
+    padding-right: 15px;
+}
+.right{
+    flex-basis: 100%;
+    padding-left: 15px;
+    text-align: right;
+}
+.right button{
+    margin-top: 20px;
+}
+.radioGroupTitle{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
 }
 .radioGroup{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.radioGroup>div {
+    position: relative;
+}
+.radioGroup>div label {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+}
+.radioGroup>div input{
+    margin-right: 25px;
 }

@@ -155,7 +155,7 @@ const Reviews = props => {
           subTitle={giveFetback.subTitle}
           children={giveFetback.buttonName}
         />
-        <div className={style.wrapTop}>
+        <div className={style.wrapForm}>
           <Form />
         </div>
         <div className={style.review}>
@@ -193,7 +193,6 @@ const Reviews = props => {
               восхитителен)!!!
             </p>
           </div>
-          <span className={style.btn}>Комментировать</span>
         </div>
         <div className={style.review}>
           <div className={style.reviewInfo}>
@@ -230,7 +229,6 @@ const Reviews = props => {
               много текста)
             </p>
           </div>
-          <span className={style.btn}>Комментировать</span>
         </div>
       </div>
     </React.Fragment>
