@@ -1,13 +1,13 @@
 import React from "react";
 import InnerBanner from "../../innerBanner/InnerBanner";
-import Form from "../../form/Form";
+import Form from "./form/Form";
 import Phone from "../../phone/Phone";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 import style from "./Contacts.module.css";
 
 const mapState = {
-  center: [52.1008174, 23.6916544],
-  zoom: 18,
+  center: [52.100818, 23.6914],
+  zoom: 17,
   controls: ["zoomControl"]
 };
 const contactPageInfo = {
@@ -37,7 +37,9 @@ const Contacts = props => {
         </div>
         <div className={style.bootom}>
           <YMaps query={{ load: "control.ZoomControl" }}>
-            <Map width="1200px" height="450px" state={mapState} />
+            <Map className={style.map} state={mapState}>
+              <Placemark defaultGeometry={mapState.center} />
+            </Map>
           </YMaps>
         </div>
       </div>

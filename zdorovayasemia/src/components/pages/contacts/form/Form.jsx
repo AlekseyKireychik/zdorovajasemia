@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../button/Button";
-import Input from "../input/Input";
-import Textarea from "../textarea/Textarea";
+import Button from "../../../button/Button";
+import Input from "../../../input/Input";
+import Textarea from "../../../textarea/Textarea";
 import style from "./Form.module.css";
 
 const Form = () => {

@@ -2,6 +2,7 @@ import React from "react";
 import InnerBanner from "../../innerBanner/InnerBanner";
 import Image from "../../image/Image";
 import Button from "../../button/Button";
+import Form from "./form/Form";
 import style from "./Reviews.module.css";
 
 const reiewsData = [
@@ -146,6 +147,9 @@ const Reviews = props => {
             <p>Поделитесь вашим опытом общения c МОЦ «Здоровая семья»</p>
           </div>
           <Button children="Оставить отзыв" />
+        </div>
+        <div className={style.wrapTop}>
+          <Form />
         </div>
         <div className={style.review}>
           <div className={style.reviewInfo}>

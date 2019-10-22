@@ -21,6 +21,9 @@
 .Subtitle {
   margin-top: 0;
 }
+.textWraper p {
+  padding-right: 105px;
+}
 .textWraper a {
   color: #95ce5a;
   font-size: 17px;
@@ -38,4 +41,8 @@ form {
   align-items: center;
   justify-content: flex-end;
   flex-basis: 100%;
+}
+.map {
+  width: 1200px;
+  height: 450px;
 }
