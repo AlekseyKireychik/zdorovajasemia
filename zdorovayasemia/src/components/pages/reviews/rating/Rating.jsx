@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import Star from "../star/Star";
 // import style from "./Rating.module.css";
 
 class Rating extends Component {
@@ -53,7 +54,7 @@ class Rating extends Component {
           onClick={!this.props.readonly && this.setRating.bind(this, i)}
           onMouseOver={!this.props.readonly && this.setTemp.bind(this, i)}
         >
-          &#9734;
+          <Star />
         </span>
       );
     }
