@@ -1,9 +1,45 @@
 let Store = {
   pageHome: {},
-  pageAbout: {},
-  pageBlog: {},
-  pageContacts: {},
-  pageProducts: {},
+  pageAbout: {
+    info: {
+      title: "О нас",
+      background: "..//images/aboutus.jpg"
+    },
+    greeting: {
+      title:"Уважаемые Дамы и Господа!",
+      subTitle:"Мы рады приветствовать Вас на сайте массажно-оздоровительного центра «Здоровая семья»!",
+      resume:"Система абонементов и скидок приятно Вас порадуют."
+    }
+  },
+  pageBlog: {
+    info: {
+      title: "Блог",
+      background: "..//images/blog.jpeg"
+    }
+  },
+  pageContacts: {
+    info: {
+      title: "Контакты",
+      background: "..//images/mainpic-contacts.411999d7.jpg"
+    },
+    mapState: {
+      center: [52.100818, 23.6914],
+      zoom: 17,
+      controls: ["zoomControl"]
+    },
+    contactPageInfo: {
+      title: "Свяжитесь с нами",
+      subTitle:
+        "Если вы хотите связаться с нами, воспользуйтесь формой. Если вы предпочитаете телефонный разговор, вы можете позвонить сейчас по номерам:",
+      text: "Мы всегда стремимся ответить на ваши вопросы быстро и эффективно."
+    }
+  },
+  pageProducts: {
+    info: {
+      title: "Контакты",
+      background: "..//images/mainpic-contacts.411999d7.jpg"
+    }
+  },
   pageReviews: {
     info: {
       title: "Отзывы",
@@ -207,7 +243,17 @@ let Store = {
       }
     ]
   },
-  pageServices: {},
-  pageTeam: {}
+  pageServices: {
+    info: {
+      title: "Контакты",
+      background: "..//images/mainpic-contacts.411999d7.jpg"
+    }
+  },
+  pageTeam: {
+    info: {
+      title: "Контакты",
+      background: "..//images/mainpic-contacts.411999d7.jpg"
+    }
+  }
 };
 export default Store;
