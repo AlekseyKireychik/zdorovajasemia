@@ -6,3 +6,33 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.item {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrapText {
+  flex-basis: 50%;
+}
+.wrapImg {
+  flex-basis: 50%;
+}
+.wrapImg img {
+  object-fit: cover;
+}
+.wrapText ul {
+  margin: 0;
+  padding: 0;
+}
+.wrapText li {
+  padding-bottom: 40px;
+  list-style: none;
+}
+.wrapText li img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 70px;
+}
