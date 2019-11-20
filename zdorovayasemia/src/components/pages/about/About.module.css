@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 .item {
-  padding: 50px 0;
+  padding: 70px 0;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -27,12 +27,18 @@
   padding: 0;
 }
 .wrapText li {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+  padding-left: 25px;
   list-style: none;
+  position: relative;
 }
-.wrapText li img {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 70px;
+.wrapText li:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 10px;
+  height: 3px;
+  background-color: #95ce5a;
 }
+/* src="..//images/icons/icon-ok.svg" */
