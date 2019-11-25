@@ -3,10 +3,10 @@
   list-style: none;
 }
 .btn {
-  padding: 10px 5px;
+  padding: 10px 25px 10px 15px;
   display: flex;
   width: 100%;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 36px;
   color: #95ce5a;
   text-decoration: none;
@@ -14,7 +14,6 @@
   cursor: pointer;
 }
 .btnHover {
-  text-transform: uppercase;
   opacity: 0;
   transition: 0.3s;
   margin-left: auto;

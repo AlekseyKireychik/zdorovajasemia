@@ -162,9 +162,8 @@ const itemServiceTile = servicesDate.map(item => {
   return (
     <ServiceItemBtn
       key={item.id}
-      width="35px"
       children={item.title}
-      btnHoverName="посмотреть"
+      btnHoverName="подробнее"
     />
   );
 });
