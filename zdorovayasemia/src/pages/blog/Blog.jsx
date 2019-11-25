@@ -1,7 +1,7 @@
 import React from "react";
-import InnerBanner from "../../innerBanner/InnerBanner";
+import InnerBanner from "../../components/innerBanner/InnerBanner";
 import Blogpost from "../blog/blogpost/Blogpost";
-import Store from "../../../store";
+import Store from "../../store";
 import style from "./Blog.module.css";
 
 const Blog = props => {

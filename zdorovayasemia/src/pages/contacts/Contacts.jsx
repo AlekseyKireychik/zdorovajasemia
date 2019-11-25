@@ -1,8 +1,8 @@
 import React from "react";
-import InnerBanner from "../../innerBanner/InnerBanner";
+import InnerBanner from "../../components/innerBanner/InnerBanner";
 import Form from "./form/Form";
-import Phone from "../../phone/Phone";
-import Store from "../../../store";
+import Phone from "../../components/phone/Phone";
+import Store from "../../store";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 import style from "./Contacts.module.css";
 

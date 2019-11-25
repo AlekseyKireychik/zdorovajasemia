@@ -1,5 +1,5 @@
 import React from "react";
-import InnerBanner from "../../innerBanner/InnerBanner";
+import InnerBanner from "../../components/innerBanner/InnerBanner";
 import style from "./Products.module.css";
 
 const Products = props => {

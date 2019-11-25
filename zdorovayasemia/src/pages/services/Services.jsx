@@ -1,5 +1,5 @@
 import React from "react";
-import InnerBanner from "../../innerBanner/InnerBanner";
+import InnerBanner from "../../components/innerBanner/InnerBanner";
 import ServiceItemBtn from "./serviceItem/ServiceItemBtn";
 import ServicesItemConten from "./servicesItemContent/ServicesItemContent";
 import style from "./Services.module.css";

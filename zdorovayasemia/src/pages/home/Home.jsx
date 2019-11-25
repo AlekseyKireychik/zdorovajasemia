@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Home.module.css";
-import Banner from "../../banner/Banner";
-import Greeting from "../../greeting/Greeting";
-import Advantages from "../../advantages/Advantages";
+import Banner from "../../components/banner/Banner";
+import Greeting from "../../components/greeting/Greeting";
+import Advantages from "../../components/advantages/Advantages";
 import Typesmassage from "../home/typesmassage/Typesmessage";
-import Specialists from "../../specialists/Specialists";
-import News from "../../news/News";
+import Specialists from "../../components/specialists/Specialists";
+import News from "../../components/news/News";
 
 const Home = props => {
   return (

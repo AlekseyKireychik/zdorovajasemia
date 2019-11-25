@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "../../../icon/Icon";
+import Icon from "../../../components/icon/Icon";
 import style from "./ServiceItemBtn.module.css";
 const ServiceItemBtn = (props, onClick) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "../../../image/Image";
+import Image from "../../../components/image/Image";
 import Star from "../star/Star";
 import style from "./Review.module.css";
 

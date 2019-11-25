@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/header/Header";
-import Home from "./components/pages/home/Home";
-import About from "./components/pages/about/About";
-import Services from "./components/pages/services/Services";
-import Products from "./components/pages/products/Products";
-import Team from "./components/pages/team/Team";
-import Blog from "./components/pages/blog/Blog";
-import Reviews from "./components/pages/reviews/Reviews";
-import Contacts from "./components/pages/contacts/Contacts";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Services from "./pages/services/Services";
+import Products from "./pages/products/Products";
+import Team from "./pages/team/Team";
+import Blog from "./pages/blog/Blog";
+import Reviews from "./pages/reviews/Reviews";
+import Contacts from "./pages/contacts/Contacts";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter, Route } from "react-router-dom";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../../../image/Image";
-import Button from "../../../button/Button";
+import Image from "../../../components/image/Image";
+import Button from "../../../components/button/Button";
 import style from "./Blogpost.module.css";
 
 const Blogpost = props => {

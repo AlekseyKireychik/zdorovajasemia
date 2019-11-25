@@ -1,6 +1,6 @@
 import React from "react";
-import InnerBanner from "../../innerBanner/InnerBanner";
-import Specialist from "../../specialists/specialist/Specialist";
+import InnerBanner from "../../components/innerBanner/InnerBanner";
+import Specialist from "../../components/specialists/specialist/Specialist";
 import style from "./Team.module.css";
 
 const Team = props => {

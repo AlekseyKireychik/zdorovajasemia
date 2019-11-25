@@ -1,9 +1,9 @@
 import React from "react";
-import InnerBanner from "../../innerBanner/InnerBanner";
+import InnerBanner from "../../components/innerBanner/InnerBanner";
 import GiveFetback from "./giveFetback/GiveFetback";
 import Form from "./form/Form";
 import Review from "./review/Review";
-import Store from "../../../store";
+import Store from "../../store";
 import style from "./Reviews.module.css";
 
 const itemsReviews = Store.pageReviews.reiewsData.map(item => {

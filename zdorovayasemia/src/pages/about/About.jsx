@@ -1,6 +1,6 @@
 import React from "react";
-import InnerBanner from "../../innerBanner/InnerBanner";
-import Store from "../../../store";
+import InnerBanner from "../../components/innerBanner/InnerBanner";
+import Store from "../../store";
 import style from "./About.module.css";
 
 const About = props => {
