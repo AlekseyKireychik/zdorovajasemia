@@ -3,7 +3,7 @@ let Store = {
   pageAbout: {
     info: {
       title: "О нас",
-      background: "..//images/aboutus.jpg"
+      background: "./asset/images/aboutus.jpg"
     },
     greeting: {
       title: "Уважаемые Дамы и Господа!",

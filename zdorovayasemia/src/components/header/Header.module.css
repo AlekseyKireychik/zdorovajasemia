@@ -9,10 +9,11 @@
 }
 .headerZD{
   font-family: "Open Sans", sans-serif;
-  font-size: 36px;
-  line-height: 62px;
+  font-size: 64px;
+  line-height: 70px;
   font-weight: 600;
-  text-decoration: underline;
+  text-decoration: none;
+  text-transform: uppercase;
   color: #95ce5a;
 }
 .headerNav {

@@ -8,7 +8,7 @@ const Logo = () => {
       <NavLink to="/" className={style.logoLink}>
         <img
           className={style.logoImg}
-          src="..//images/logo.jpg"
+          src="../../asset/images/logo.jpg"
           alt="Массажно-оздоровительный центр «Здоровая семья»"
         ></img>
       </NavLink>

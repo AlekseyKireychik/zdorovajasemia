@@ -5,7 +5,6 @@ const ServiceItemBtn = (props, onClick) => {
     <li className={style.item}>
       <span className={style.btn}>
         {props.children}
-        <span className={style.btnHover}>{props.btnHoverName}</span>
       </span>
     </li>
   );

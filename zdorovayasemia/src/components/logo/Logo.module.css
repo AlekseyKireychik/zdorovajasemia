@@ -1,13 +1,5 @@
-.logoWrap {
-
-}
-
-.logoLink {
-
-}
-
 .logoImg {
-    max-width: 135px;
+    max-width: 105px;
     object-fit: cover;
 }
 
