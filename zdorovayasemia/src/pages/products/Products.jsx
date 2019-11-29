@@ -1,12 +1,16 @@
 import React from "react";
 import InnerBanner from "../../components/innerBanner/InnerBanner";
 import Image from "../../components/image/Image";
+import Store from "../../store";
 import style from "./Products.module.css";
 
 const Products = props => {
   return (
     <React.Fragment>
-      <InnerBanner bgimage="./../asset/images/product.jpg" children="Продукты" />
+      <InnerBanner
+        bgimage={Store.pageProducts.info.background}
+        children={Store.pageProducts.info.title}
+      />
       <div className={style.container}>
         <section className={style.titleGroup}>
           <h2>Ортопедические товары</h2>

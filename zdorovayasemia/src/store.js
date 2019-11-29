@@ -3,7 +3,7 @@ let Store = {
   pageAbout: {
     info: {
       title: "О нас",
-      background: "./asset/images/aboutus.jpg"
+      background: "..//images/aboutus.jpg"
     },
     greeting: {
       title: "Уважаемые Дамы и Господа!",
@@ -44,7 +44,7 @@ let Store = {
   pageContacts: {
     info: {
       title: "Контакты",
-      background: "..//images/mainpic-contacts.411999d7.jpg"
+      background: "..//images/contacts.jpg"
     },
     mapState: {
       center: [52.100818, 23.6914],
@@ -60,8 +60,8 @@ let Store = {
   },
   pageProducts: {
     info: {
-      title: "Контакты",
-      background: "..//images/mainpic-contacts.411999d7.jpg"
+      title: "Продукты",
+      background: "..//images/product.jpg"
     }
   },
   pageReviews: {
@@ -275,9 +275,43 @@ let Store = {
   },
   pageTeam: {
     info: {
-      title: "Контакты",
-      background: "..//images/mainpic-contacts.411999d7.jpg"
-    }
+      title: "Наша команда",
+      background: "..//images/team.jpg"
+    },
+    teamData: [
+      {
+        id: 1,
+        img: "../../images/specialist.jpg",
+        name: "Дубовский Илья Олегович",
+        position: "Директор",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, ollit anim id est laborum."
+      },
+      {
+        id: 2,
+        img: "../../images/specialist02.jpg",
+        name: "Дубовский Илья Олегович",
+        position: "Директор",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, ollit anim id est laborum."
+      },
+      {
+        id: 3,
+        img: "../../images/specialist03.jpg",
+        name: "Дубовский Илья Олегович",
+        position: "Директор",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, ollit anim id est laborum."
+      },
+      {
+        id: 4,
+        img: "../../images/specialist04.jpg",
+        name: "Дубовский Илья Олегович",
+        position: "Директор",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, ollit anim id est laborum."
+      }
+    ]
   }
 };
 export default Store;
