@@ -13,7 +13,7 @@ const Products = props => {
       />
       <div className={style.container}>
         <section className={style.titleGroup}>
-          <h2>Ортопедические товары</h2>
+          <h2>{Store.pageProducts.category.titleCategory}</h2>
         </section>
         <section className={style.product}>
           <div className={style.productText}>

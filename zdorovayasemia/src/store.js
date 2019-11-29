@@ -62,7 +62,12 @@ let Store = {
     info: {
       title: "Продукты",
       background: "..//images/product.jpg"
-    }
+    },
+    category: {
+      id: "1",
+      titleCategory: "Ортопедические товары"
+    },
+    productsData: []
   },
   pageReviews: {
     info: {

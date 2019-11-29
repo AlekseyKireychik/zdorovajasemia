@@ -160,12 +160,7 @@ const servicesDate = [
 ];
 
 const itemServiceTile = servicesDate.map(item => {
-  return (
-    <ServiceItemBtn
-      key={item.id}
-      children={item.title}
-    />
-  );
+  return <ServiceItemBtn key={item.id} children={item.title} />;
 });
 
 const ValServiceItemConten = servicesDate.map(item => {
@@ -179,7 +174,7 @@ const ValServiceItemConten = servicesDate.map(item => {
       text={item.text}
       subTitleTwo={item.subTitleTwo}
       listTwo={item.listTwo}
-      textTwo={item.textTwo}      
+      textTwo={item.textTwo}
     />
   );
 });
