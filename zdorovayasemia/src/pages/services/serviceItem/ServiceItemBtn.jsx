@@ -3,9 +3,9 @@ import style from "./ServiceItemBtn.module.css";
 const ServiceItemBtn = (props, onClick) => {
   return (
     <li className={style.item}>
-      <span className={style.btn}>
+      <a href="#" className={style.btn}>
         {props.children}
-      </span>
+      </a>
     </li>
   );
 };
