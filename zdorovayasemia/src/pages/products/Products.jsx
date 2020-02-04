@@ -52,7 +52,7 @@ const Products = props => {
             </p>
           </div>
           <div className={style.productImg}>
-            <Image alt="орто-покрытие" width="400" height="400" />
+            <img src="..//images/products/ortopocr.jpg" alt="орто-покрытие"/>
           </div>
         </section>
         <section className={style.product}>

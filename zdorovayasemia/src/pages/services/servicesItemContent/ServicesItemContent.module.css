@@ -5,14 +5,14 @@ li {
   font-family: "Roboto", sans-serif;
   margin-bottom: 5px;
 }
-section ul {
+.servicesItem ul {
   margin-bottom: 0;
 }
-section li {
+.servicesItem li {
   position: relative;
   list-style: none;
 }
-section li:after {
+.servicesItem li:after {
   content: "";
   position: absolute;
   top: 5px;
