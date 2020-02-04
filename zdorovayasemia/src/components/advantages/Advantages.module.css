@@ -46,3 +46,6 @@
   margin: 35px 0;
   border-left: 2px solid #95ce5a;
 }
+.item p {
+  margin: 0;
+}

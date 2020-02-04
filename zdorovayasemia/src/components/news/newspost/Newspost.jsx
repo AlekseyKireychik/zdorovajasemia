@@ -11,7 +11,7 @@ const Newspost = props => {
           alt={props.description}
         ></img>
         <div className={style.overlay}></div>
-        <span className={style.description}>{props.description}</span>
+        <p className={style.description}>{props.description}</p>
       </a>
     </li>
   );

@@ -2,8 +2,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 120px);
-  border-bottom: 5px solid #95ce5a;
+  height: calc(100vh - 167px);
+  border-bottom: 3px solid #95ce5a;
 }
 .container {
   max-width: 1200px;

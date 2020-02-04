@@ -3,6 +3,7 @@
   align-items:flex-start;
   justify-content: space-between;
   text-align: left;
+  max-width: 48%;
 }
 .wrapInfo{
   padding: 0 20px;
@@ -14,16 +15,18 @@
 .title {
   font-size: 22px;
   line-height: 32px;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 0px;
   margin-bottom: 25px;
 }
 .position{
-  font-size: 18px;
+  color: #6A6A6A;
+  font-size: 16px;
   line-height: 18px;
   margin-bottom: 25px;
 }
 .description {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 16px;
 }

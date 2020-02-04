@@ -26,10 +26,10 @@
   justify-content: flex-start;
   padding: 15px 15px 15px 15px;
   box-sizing: border-box;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #424242;
-  transition: 0.3s ease;
+  transition: 0.2s all linear;
 }
 
 
@@ -37,5 +37,5 @@
 .nav a.active {
   border-color: #ebebeb;
   color: #95ce5a;
-  transition: 0.3s ease;
+  transition: 0.2s all linear;
 }

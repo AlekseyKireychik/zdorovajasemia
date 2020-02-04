@@ -41,11 +41,23 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .adressItem img {
   width: 25px;
   margin-right: 10px;
 }
+.adresslist a {
+  color: #80838d;
+  margin-left: 35px;
+  font-size: 14px;
+  transition: 0.25s all linear;
+}
+.adresslist a:hover {
+  color: #95ce5a;
+  transition: 0.25s all linear;
+}
+
 .contactList {
   display: flex;
   align-items: flex-start;
@@ -60,12 +72,12 @@ footer {
   font-size: 17px;
   line-height: 26px;
   color: #80838d;
-  transition: all 0.25s ease;
+  transition: 0.25s all linear;
   text-decoration: none;
 }
 .contactList a:hover {
   color: #95ce5a;
-  transition: all 0.25s ease;
+  transition: 0.25s all linear;
 }
 .contactItem {
   display: flex;
@@ -76,6 +88,9 @@ footer {
 .contactItem img {
   width: 20px;
   margin-right: 10px;
+}
+.contactItem:first-child img {
+  width: 25px;
 }
 .socialList {
   display: flex;

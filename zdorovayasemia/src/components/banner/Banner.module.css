@@ -2,7 +2,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vh - 141px);
+    height: calc(100vh - 163px);
     width: 100%;
     position: relative;    
     color: #f4f4f4;
@@ -16,7 +16,7 @@
     left: 0;
     right: 0;    
     background-color: rgba(67, 164, 0, 0.65);
-    padding: 60px 40px 60px 40px;
+    padding: 45px 40px 45px 40px;
 }
 
 .bannerSlide {
@@ -24,7 +24,9 @@
     margin: 0 auto;
 }
 .bannerCaption span {
-    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    line-height: 28px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
 }

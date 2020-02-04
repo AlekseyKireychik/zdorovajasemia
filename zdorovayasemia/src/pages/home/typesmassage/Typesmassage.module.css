@@ -9,14 +9,15 @@
   margin: 0 auto;
 }
 .title {
-  padding: 0 0 50px;
+  padding: 0 0 30px;
   text-align: center;
-  font-size: 28px;
-  line-height: 36px;
+  margin: 0;
 }
 .list {
+  max-width: 1200px;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
 }
 

@@ -12,16 +12,15 @@ const Footer = props => {
     <footer>
       <div className={style.container}>
         <div className={style.adresslist}>
-          <ComapanyName title="Массажно-оздоровительный центр «Здоровая семья»" />
           <div className={style.adressItem}>
             <Icon src="/images/icons/location-pin.svg" alt="Адрес" />
-            <Adress adress="г.Брест, ул.Орджоникидзе, 39" />
+            <Adress adress="г.Брест, ул.Орджоникидзе, 39" />            
           </div>
+          <a href="">Посмотреть на карте</a>
         </div>
         <ul className={style.contactList}>
           <li className={style.contactItem}>
             <Icon
-              width="25"
               src="/images/icons/mail.svg"
               alt="Почтовый адрес"
             />
