@@ -39,6 +39,6 @@
 .nav a:hover,
 .nav a.active {
   border-color: #ebebeb;
-  color: #95ce5a;
+  color: rgba(67, 164, 0, 0.95);
   transition: 0.2s all linear;
 }

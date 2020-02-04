@@ -16,7 +16,7 @@ const Footer = props => {
             <Icon src="/images/icons/location-pin.svg" alt="Адрес" />
             <Adress adress="г.Брест, ул.Орджоникидзе, 39" />            
           </div>
-          <a href="">Посмотреть на карте</a>
+          <a href="https://yandex.by/maps/-/CKQJ6MKJ" >Посмотреть на карте</a>
         </div>
         <ul className={style.contactList}>
           <li className={style.contactItem}>

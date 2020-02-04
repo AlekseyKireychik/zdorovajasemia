@@ -6,7 +6,7 @@ const ServicesItemContent = props => {
     <section className={style.servicesItem} id={props.data_id} data-attr={props.data_id}>
       {props.title !== "" ? <h2 className={style.title}>{props.title}</h2> : ""}
 
-      {props.description !== "" ? <span>{props.description}</span> : ""}
+      {props.description !== "" ? <p>{props.description}</p> : ""}
 
       {props.subTitle !== "" ? (
         <h3 className={style.subTitle}>{props.subTitle}</h3>

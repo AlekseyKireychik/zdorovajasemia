@@ -14,13 +14,16 @@
   line-height: 36px;
 }
 .link {
-  color: #95ce5a;
+  color: #424242;
   font-size: 18px;
   font-weight: 400;  
   text-decoration: none;
+  transition: 0.2s all linear;
 }
 .link:hover {
+  color: rgba(67, 164, 0, 0.95);
   text-decoration: underline;
+  transition: 0.2s all linear;
 }
 ul.container {
   list-style: none;

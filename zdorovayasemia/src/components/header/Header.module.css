@@ -52,10 +52,10 @@
 .phoneList li:last-child a {
   padding-right: 0px;
   padding-left: 10px;
-  border-left: 2px solid #95ce5a;
+  border-left: 2px solid rgba(67, 164, 0, 0.95);
 }
 .phoneList a:hover {
-  color: #95ce5a;
+  color: rgba(67, 164, 0, 0.95);
   transition: 0.2s all linear;
 }
 
