@@ -3,7 +3,7 @@ import style from "./ServicesItemContent.module.css";
 
 const ServicesItemContent = props => {
   return (
-    <section className="ServicesItem">
+    <section className="servicesItem" id={"service" + props.data_id} data-attr={props.data_id}>
       {props.title !== "" ? <h2 className={style.title}>{props.title}</h2> : ""}
 
       {props.description !== "" ? <span>{props.description}</span> : ""}
@@ -32,12 +32,11 @@ const ServicesItemContent = props => {
         ""
       )}
 
-      {props.listTwo !== "" ? (
+      {props.listTwo !== undefined ? (
         <ul className={style.listTwo}>
-          {/* {props.listTwo.map((el, index) => {
-            return <li key={index}>{el}</li>;
-          })
-          } */}
+          {props.listTwo.map((elem, index) => {
+            return <li key={index}>{elem}</li>;
+          })}
         </ul>
       ) : (
         ""

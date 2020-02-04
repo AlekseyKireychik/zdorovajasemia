@@ -11,7 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
   width: 100%;
   color: #000;
   max-width: 1200px;
@@ -21,30 +20,39 @@
 .headerTop {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 100%;
 }
 
 .headerContacts {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .phoneList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   padding-left: 35px;
   margin: 0;
-  margin-top: 15px;
-  border-left: 2px solid #95ce5a;
+  margin-top: 5px;
 }
 .phoneList a {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 16px;
   text-decoration: none;
   color: #424242;
   transition: 0.2s all linear;
+  padding-right: 10px;
+}
+.phoneList li:last-child a {
+  padding-right: 0px;
+  padding-left: 10px;
+  border-left: 2px solid #95ce5a;
 }
 .phoneList a:hover {
   color: #95ce5a;

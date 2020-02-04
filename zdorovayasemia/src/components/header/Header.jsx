@@ -9,13 +9,9 @@ const Header = () => {
   return (
     <header className={style.header}>
       <nav className={style.headerNav}>
+        <Logo />
         <div className={style.headerTop}>
-          <Logo />
-         {/* <span className={style.headerZD}>zdsemia</span>  */}
           <div className={style.headerContacts}>
-            <div className={style.adress}>
-              <Adress adress="г.Брест, ул.Орджоникидзе, 39" />
-            </div>
             <ul className={style.phoneList}>
               <li className={style.phoneItem}>
                 <Phone
@@ -31,8 +27,8 @@ const Header = () => {
               </li>
             </ul>
           </div>
+          <Navigation />
         </div>
-        <Navigation />
       </nav>
     </header>
   );

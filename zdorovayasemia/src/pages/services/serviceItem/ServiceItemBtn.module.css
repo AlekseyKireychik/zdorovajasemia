@@ -7,16 +7,15 @@
   margin-right: 10px;
 }
 .btn {
-  padding: 5px 10px 5px 10px;
+  padding: 8px 15px 8px 15px;
   font-size: 14px;
   line-height: 17px;
   text-decoration: none;
   transition: 0.3s all linear;
   cursor: pointer;
-  background: #95CE5A;
   box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
-  border: 1px solid #95CE5A;
-  color: #fff;
+  border: 1px solid #e3e2e2; 
+  color: #7d7d7d;
   border-radius: 5px;   
 }
 .btnHover {
@@ -24,17 +23,11 @@
   transition: 0.3s all linear;
   margin-left: auto;
 }
-.btn:hover {
+.btn:hover,
+.btn:focus,
+.btn:active {
   box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
-  background: #8CC459;
-  transition: 0.3s all linear;
-}
-.btn:focus {
-  background: #95CE5A;
-  border: 1px solid #333E50;
-  color: #333E50;
-}
-.btn:hover .btnHover {
-  opacity: 1;
+  color: #8CC459;
+  border: 1px solid #95CE5A;
   transition: 0.3s all linear;
 }

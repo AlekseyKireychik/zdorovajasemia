@@ -3,10 +3,10 @@
   align-items:flex-start;
   justify-content: space-between;
   text-align: left;
-  max-width: 48%;
+  max-width: 49%;
 }
 .wrapInfo{
-  padding: 0 20px;
+  padding: 0 20px 0 35px;
   display: flex;
   flex-direction: column;
   align-items:flex-start;
@@ -17,7 +17,7 @@
   line-height: 32px;
   font-weight: 400;
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .position{
   color: #6A6A6A;

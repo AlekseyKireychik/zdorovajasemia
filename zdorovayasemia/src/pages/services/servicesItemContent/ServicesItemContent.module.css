@@ -1,0 +1,23 @@
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+li {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
+section ul {
+  margin-bottom: 0;
+}
+section li {
+  position: relative;
+  list-style: none;
+}
+section li:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  background-color: #95ce5a;
+}

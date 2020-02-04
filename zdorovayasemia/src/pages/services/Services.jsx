@@ -64,7 +64,7 @@ const servicesDate = [
       "Оздоровительная гимнастика поможет справиться с последствиями современной жизни."
     ],
     subTitleTwo: "ГЛАВНАЯ ЦЕЛЬ и ЗАДАЧА это:",
-    subItems: [
+    listTwo: [
       "Предотвращение и лечение сколиоза",
       "Формирование правильной осанки",
       "Улучшение работы сердечно-сосудистой системы",
@@ -160,13 +160,20 @@ const servicesDate = [
 ];
 
 const itemServiceTile = servicesDate.map(item => {
-  return <ServiceItemBtn key={item.id} children={item.title} />;
+  return (
+    <ServiceItemBtn
+      href={"#service" + item.id}
+      key={item.id}
+      children={item.title}
+    />
+  );
 });
 
 const ValServiceItemConten = servicesDate.map(item => {
   return (
     <ServicesItemConten
       key={"0" + item.id}
+      data_id={item.id}
       title={item.title}
       description={item.description}
       subTitle={item.subTitle}
