@@ -3,7 +3,7 @@ import style from "./ServicesItemContent.module.css";
 
 const ServicesItemContent = props => {
   return (
-    <section className={style.servicesItem} id={"service" + props.data_id} data-attr={props.data_id}>
+    <section className={style.servicesItem} id={props.data_id} data-attr={props.data_id}>
       {props.title !== "" ? <h2 className={style.title}>{props.title}</h2> : ""}
 
       {props.description !== "" ? <span>{props.description}</span> : ""}
