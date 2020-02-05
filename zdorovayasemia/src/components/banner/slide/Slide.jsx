@@ -1,6 +1,7 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import SlideItem from "./slideItems/SlideItem";
+import Store from "../../../store";
 import style from "./Slide.module.css";
 
 const proprieties = {
@@ -11,16 +12,10 @@ const proprieties = {
   arrows: false
 };
 
-const Slideshow = (props) => {
-  let slideElems = [
-    "Мы хотим и можем Вам помочь",
-    "Более 5 лет работаем для Вас",
-    "Высококлассные специалисты",
-    "Современные методики",
-    "Пн-Пт: 9.00-21.00  Сб: 9.00-15.00"
-  ];
-
-  let mySlideElems = slideElems.map(el => <SlideItem text={el} />);
+const Slideshow = props => {
+  let mySlideElems = Store.pageHome.banner.slideElems.map(el => (
+    <SlideItem text={el} />
+  ));
 
   return (
     <div className={style.containerSlide}>

@@ -1,14 +1,15 @@
 import React from "react";
 import style from "./Banner.module.css";
 import Slideshow from "./slide/Slide.jsx";
-
-let Background = "..//images/detsky-massag-bg.jpg";
+import Store from "../../store";
 
 const Banner = props => {
   return (
     <div
       className={style.banner}
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{
+        backgroundImage: `url(${Store.pageHome.banner.backgroundBanner})`
+      }}
     >
       <div className={style.bannerCaption}>
         <div className={style.bannerSlide}>

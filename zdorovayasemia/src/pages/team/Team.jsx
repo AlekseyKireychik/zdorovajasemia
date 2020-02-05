@@ -1,6 +1,7 @@
 import React from "react";
 import InnerBanner from "../../components/innerBanner/InnerBanner";
 import Specialist from "../../components/specialists/specialist/Specialist";
+// import SpecialistsItems from "../../components/specialists/SpecialistItems";
 import Store from "../../store";
 import style from "./Team.module.css";
 
