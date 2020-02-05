@@ -1,0 +1,39 @@
+.item {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.wrapText {
+  flex-basis: 50%;
+}
+.wrapImg {
+  flex-basis: 50%;
+}
+.wrapImg img {
+  object-fit: cover;
+}
+.wrapText ul {
+  margin: 0;
+  padding: 0;
+}
+.wrapText li {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  list-style: none;
+  position: relative;
+}
+.wrapText li:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 10px;
+  height: 3px;
+  background-color: rgba(67, 164, 0, 0.95);
+}

@@ -21,7 +21,7 @@ const ValTeamItemConten = Store.pageTeam.teamData.map(item => {
 
 const Specialists = props => {
   return (
-    <section className={style.specialists}>
+    <section id={props.blok_id} className={style.specialists}>
       <div className={style.container}>
         <h2 className={style.title}>Наши мастера</h2>
         <NavLink className={style.link} to="team">

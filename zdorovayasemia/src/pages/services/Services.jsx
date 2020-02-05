@@ -3,23 +3,19 @@ import InnerBanner from "../../components/innerBanner/InnerBanner";
 import ServiceItemBtn from "./serviceItemBtn/ServiceItemBtn";
 import ServicesItemConten from "./servicesItemContent/ServicesItemContent";
 import Store from "../../store";
-import ServicesItemValues from "./serviceItemValues/serviceItemValues";
+// import ServicesItemValues from "./serviceItemValues/serviceItemValues";
 import style from "./Services.module.css";
 
 const itemServiceTile = Store.pageServices.servicesDate.map(item => {
   return (
-    <ServiceItemBtn
-      id={item.id}
-      key={item.id}
-      children={item.title}
-    />
+    <ServiceItemBtn id={item.id} key={`0${item.id}`} children={item.title} />
   );
 });
 
 const ValServiceItemConten = Store.pageServices.servicesDate.map(item => {
   return (
     <ServicesItemConten
-      key={"0" + item.id}
+      key={`0${item.id}`}
       data_id={item.id}
       title={item.title}
       description={item.description}

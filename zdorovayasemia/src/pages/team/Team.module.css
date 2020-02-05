@@ -18,5 +18,5 @@
 .list li {
   padding-bottom: 90px;
   width: 100%;
-  flex-basis: 50%;
+  flex-basis: 100%;
 }

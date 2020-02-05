@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Home.module.css";
+import style from "./Home.css";
 import Banner from "../../components/banner/Banner";
 import Greeting from "../../components/greeting/Greeting";
 import Advantages from "../../components/advantages/Advantages";
@@ -17,7 +17,7 @@ const Home = props => {
         text={Store.pageHome.greeting.text}
       />
       <Advantages />
-      <Specialists />
+      <Specialists blok_id="specialist-home" />
       <Typesmassage />
       <News />
     </React.Fragment>

@@ -6,7 +6,7 @@
   max-width: 1200px;
   margin: 0 auto 25px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .link {

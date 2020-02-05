@@ -13,8 +13,8 @@ const proprieties = {
 };
 
 const Slideshow = props => {
-  let mySlideElems = Store.pageHome.banner.slideElems.map(el => (
-    <SlideItem text={el} />
+  let mySlideElems = Store.pageHome.banner.slideElems.map((el, index) => (
+    <SlideItem text={el} key={index} />
   ));
 
   return (

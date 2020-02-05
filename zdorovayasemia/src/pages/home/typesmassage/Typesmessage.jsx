@@ -2,8 +2,8 @@ import React from "react";
 import ItemType from "./itemType/ItemType";
 import Store from "../../../store";
 import style from "./Typesmassage.module.css";
-let TypesmassageElems = Store.pageHome.typesmassage.items.map(item => (
-  <ItemType subtitle={item.title} description={item.text} />
+let TypesmassageElems = Store.pageHome.typesmassage.items.map((item, index) => (
+  <ItemType subtitle={item.title} description={item.text} key={index} />
 ));
 const Typesmassage = props => {
   return (

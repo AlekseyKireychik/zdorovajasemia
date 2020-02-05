@@ -4,7 +4,7 @@ let Store = {
       backgroundBanner: "..//images/detsky-massag-bg.jpg",
       slideElems: [
         "Мы хотим и можем Вам помочь",
-        "Более 5 лет работаем для Вас",
+        "Более 10 лет работаем для Вас",
         "Высококлассные специалисты",
         "Современные методики",
         "Пн-Пт: 9.00-21.00  Сб: 9.00-15.00"
@@ -80,6 +80,7 @@ let Store = {
     },
     services: [
       {
+        id: 1,
         title: "Для детей:",
         img: "..//images/fotobaby.jpg",
         list: [
@@ -91,6 +92,7 @@ let Store = {
         ]
       },
       {
+        id: 2,
         title: "Для взрослых:",
         img: "..//images/massaz_osteopat.jpg",
         list: [
@@ -147,6 +149,7 @@ let Store = {
       subTitle: "Поделитесь вашим опытом общения c МОЦ «Здоровая семья»",
       buttonName: "Оставить отзыв"
     },
+    reiewsDataUser: [{}],
     reiewsData: [
       {
         id: 1,
@@ -509,10 +512,11 @@ let Store = {
       {
         id: 1,
         img: "../../images/specialist.jpg",
-        name: "Дубовский Илья Олегович",
-        position: "Директор",
+        name: "Стасевич Наталья Ивановна ",
+        position:
+          "Массажист высшей категории с медицинским образованием и опытом работы более 20 лет.",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, ollit anim id est laborum."
+          "Владеет и успешно применяет техники: лечебного массажа; лечебной физкультуры; оздоровительной гимнастики; Войта-терапия (рефлекторная локомоция, восстановление связей между головным и спинным мозгом через надавливание на определенные точки тела); Бобат терапия (методов борьбы для детей с ДЦП и повреждениями опорно-двигательного аппарата); Тейпирование. Легко находит контакт со своими маленькими пациентами и их родителями. Конечно, сложность диагноза имеет значение. Но только в количестве сеансов и их повторении в течение года.Наталья Ивановна всегда даст советы и обучит комплексу домашних упражнений для закрепления результатов. Массаж проходит в виде игры в присутствии мамочки."
       },
       {
         id: 2,
