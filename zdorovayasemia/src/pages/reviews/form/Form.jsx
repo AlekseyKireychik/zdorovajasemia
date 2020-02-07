@@ -3,6 +3,9 @@ import Button from "../../../components/button/Button";
 import Input from "../../../components/input/Input";
 import Textarea from "../../../components/textarea/Textarea";
 import style from "./Form.module.css";
+let addNewReview = () => {
+  alert(`Спасибо за Ваш отзыв!`);
+};
 const Form = () => {
   return (
     <form className={style.form}>
@@ -65,9 +68,7 @@ const Form = () => {
           className="btnPrimary"
           children="Отправить"
           type="submit"
-          onClick={() => {
-            alert(`шмяк!!!!`);
-          }}
+          onClick={addNewReview}
         />
       </div>
     </form>
