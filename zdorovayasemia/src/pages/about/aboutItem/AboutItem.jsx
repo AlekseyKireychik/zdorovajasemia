@@ -1,5 +1,4 @@
 import React from "react";
-import AboutItemLi from "./aboutItemLi/AboutItemLi";
 import style from "./AboutItem.module.css";
 
 const AboutItem = props => {
@@ -8,7 +7,7 @@ const AboutItem = props => {
       <div className={style.wrapText}>
         <h3>{props.title}</h3>
         <ul>
-          <AboutItemLi text={props.text}/>
+          {props.text}
         </ul>
       </div>
       <div className={style.wrapImg}>

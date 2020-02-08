@@ -2,18 +2,22 @@ import React from "react";
 import InnerBanner from "../../components/innerBanner/InnerBanner";
 import Store from "../../store";
 import AboutItem from "./aboutItem/AboutItem";
+import AboutItemLi from "./aboutItem/aboutItemLi/AboutItemLi";
 import style from "./About.module.css";
 let description = Store.pageAbout.services.map(item => {
-  let elemList = item.list.map((elem, index) => {
-    return elem;
+  
+  let elemList = item.list.map((elem) => {
+    return elem;    
   });
-  console.log(elemList);
+  let elemListLi = elemList.map((elem, index) => {
+    return <AboutItemLi key={index} text={elem}/>;    
+  });
   return (
     <AboutItem
       key={`${item.id}`}
       title={item.title}
       img={item.img}
-      text={`${elemList}`}
+      text={elemListLi}
     />
   );
 });
