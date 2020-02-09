@@ -8,7 +8,7 @@ const Banner = props => {
     <div
       className={style.banner}
       style={{
-        backgroundImage: `url(${Store.pageHome.banner.backgroundBanner})`
+        backgroundImage: `url(${Store._state.pageHome.banner.backgroundBanner})`
       }}
     >
       <div className={style.bannerCaption}>

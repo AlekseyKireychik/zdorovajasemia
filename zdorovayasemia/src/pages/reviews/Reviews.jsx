@@ -6,7 +6,7 @@ import Review from "./review/Review";
 import Store from "../../store";
 import style from "./Reviews.module.css";
 
-const itemsReviews = Store.pageReviews.reiewsData.map(item => {
+const itemsReviews = Store._state.pageReviews.reiewsData.map(item => {
   return (
     <Review
       key={item.id}
@@ -22,14 +22,14 @@ const Reviews = props => {
   return (
     <React.Fragment>
       <InnerBanner
-        bgimage={Store.pageReviews.info.background}
-        children={Store.pageReviews.info.title}
+        bgimage={Store._state.pageReviews.info.background}
+        children={Store._state.pageReviews.info.title}
       />
       <div className={style.container}>
         <GiveFetback
-          title={Store.pageReviews.giveFetback.title}
-          subTitle={Store.pageReviews.giveFetback.subTitle}
-          children={Store.pageReviews.giveFetback.buttonName}
+          title={Store._state.pageReviews.giveFetback.title}
+          subTitle={Store._state.pageReviews.giveFetback.subTitle}
+          children={Store._state.pageReviews.giveFetback.buttonName}
         />
         <div className={style.wrapForm}>
           <Form />

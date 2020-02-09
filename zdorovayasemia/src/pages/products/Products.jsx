@@ -8,12 +8,12 @@ const Products = props => {
   return (
     <React.Fragment>
       <InnerBanner
-        bgimage={Store.pageProducts.info.background}
-        children={Store.pageProducts.info.title}
+        bgimage={Store._state.pageProducts.info.background}
+        children={Store._state.pageProducts.info.title}
       />
       <div className={style.container}>
         <section className={style.titleGroup}>
-          <h2>{Store.pageProducts.category.titleCategory}</h2>
+          <h2>{Store._state.pageProducts.category.titleCategory}</h2>
         </section>
         <section className={style.product}>
           <div className={style.productText}>

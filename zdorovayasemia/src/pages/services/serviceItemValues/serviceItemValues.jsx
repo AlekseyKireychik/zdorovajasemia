@@ -12,7 +12,7 @@ const ServicesValues = props => {
   //     });
   //   };
 
-  let ValServiceItemConten = Store.pageServices.servicesDate.map(item => {
+  let ValServiceItemConten = Store._state.pageServices.servicesDate.map(item => {
     <ServicesItemConten
       key={`0${item.id}`}
       data_id={item.id}

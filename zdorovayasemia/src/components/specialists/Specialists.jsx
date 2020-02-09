@@ -5,7 +5,7 @@ import Store from "../../store";
 import Specialist from "./specialist/Specialist";
 // import SpecialistsItems from "./specialists/SpecialistItems";
 
-const ValTeamItemConten = Store.pageTeam.teamData.map(item => {
+const ValTeamItemConten = Store._state.pageTeam.teamData.map(item => {
   return (
     <Specialist
       key={"0" + item.id}

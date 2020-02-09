@@ -8,8 +8,8 @@ const Blog = props => {
   return (
     <React.Fragment>
       <InnerBanner 
-      bgimage={Store.pageBlog.info.background} 
-      children={Store.pageBlog.info.title} 
+      bgimage={Store._state.pageBlog.info.background} 
+      children={Store._state.pageBlog.info.title} 
       />
       <div className={style.container}>        
         <Blogpost width="300" height="300" children="Подробнее" />

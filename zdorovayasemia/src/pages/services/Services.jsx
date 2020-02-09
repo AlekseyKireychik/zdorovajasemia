@@ -6,13 +6,13 @@ import Store from "../../store";
 // import ServicesItemValues from "./serviceItemValues/serviceItemValues";
 import style from "./Services.module.css";
 
-const itemServiceTile = Store.pageServices.servicesDate.map(item => {
+const itemServiceTile = Store._state.pageServices.servicesDate.map(item => {
   return (
     <ServiceItemBtn id={item.id} key={`0${item.id}`} children={item.title} />
   );
 });
 
-const ValServiceItemConten = Store.pageServices.servicesDate.map(item => {
+const ValServiceItemConten = Store._state.pageServices.servicesDate.map(item => {
   return (
     <ServicesItemConten
       key={`0${item.id}`}

@@ -13,8 +13,8 @@ const Home = props => {
     <React.Fragment>
       <Banner />
       <Greeting
-        title={Store.pageHome.greeting.title}
-        text={Store.pageHome.greeting.text}
+        title={Store._state.pageHome.greeting.title}
+        text={Store._state.pageHome.greeting.text}
       />
       <Advantages />
       <Specialists blok_id="specialist-home" />

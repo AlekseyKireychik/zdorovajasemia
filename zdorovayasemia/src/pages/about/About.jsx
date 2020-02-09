@@ -4,7 +4,7 @@ import Store from "../../store";
 import AboutItem from "./aboutItem/AboutItem";
 import AboutItemLi from "./aboutItem/aboutItemLi/AboutItemLi";
 import style from "./About.module.css";
-let description = Store.pageAbout.services.map(item => {
+let description = Store._state.pageAbout.services.map(item => {
   
   let elemList = item.list.map((elem) => {
     return elem;    
@@ -25,15 +25,15 @@ const About = props => {
   return (
     <React.Fragment>
       <InnerBanner
-        bgimage={Store.pageAbout.info.background}
-        children={Store.pageAbout.info.title}
+        bgimage={Store._state.pageAbout.info.background}
+        children={Store._state.pageAbout.info.title}
       />
       <div className={style.container}>
-        <h2>{Store.pageAbout.greeting.title}</h2>
-        <p>{Store.pageAbout.greeting.subTitle}</p>
+        <h2>{Store._state.pageAbout.greeting.title}</h2>
+        <p>{Store._state.pageAbout.greeting.subTitle}</p>
         {description}
         <p>
-          <b>{Store.pageAbout.greeting.resume}</b>
+          <b>{Store._state.pageAbout.greeting.resume}</b>
         </p>
       </div>
     </React.Fragment>
