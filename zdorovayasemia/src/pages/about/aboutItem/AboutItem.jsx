@@ -1,17 +1,15 @@
 import React from "react";
 import style from "./AboutItem.module.css";
 
-const AboutItem = props => {
+const AboutItem = ({ title, text, img }) => {
   return (
     <section className={style.item}>
       <div className={style.wrapText}>
-        <h3>{props.title}</h3>
-        <ul>
-          {props.text}
-        </ul>
+        <h3>{title}</h3>
+        <ul>{text}</ul>
       </div>
       <div className={style.wrapImg}>
-        <img src={props.img} alt={props.title} />
+        <img src={img} alt={title} />
       </div>
     </section>
   );

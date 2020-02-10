@@ -4,13 +4,13 @@ import Store from "../../store";
 import AboutItem from "./aboutItem/AboutItem";
 import AboutItemLi from "./aboutItem/aboutItemLi/AboutItemLi";
 import style from "./About.module.css";
+
 let description = Store._state.pageAbout.services.map(item => {
-  
-  let elemList = item.list.map((elem) => {
-    return elem;    
+  let elemList = item.list.map(elem => {
+    return elem;
   });
   let elemListLi = elemList.map((elem, index) => {
-    return <AboutItemLi key={index} text={elem}/>;    
+    return <AboutItemLi key={index} text={elem} />;
   });
   return (
     <AboutItem
@@ -21,7 +21,7 @@ let description = Store._state.pageAbout.services.map(item => {
     />
   );
 });
-const About = props => {
+const About = () => {
   return (
     <React.Fragment>
       <InnerBanner

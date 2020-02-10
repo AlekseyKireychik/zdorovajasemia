@@ -1,4 +1,4 @@
-let Store = {
+let store = {
   _state: {
     pageHome: {
       banner: {
@@ -545,7 +545,7 @@ let Store = {
         }
       ]
     }
-  },
-  dispatch(action) {}
+  }
+  // dispatch(action) {}
 };
-export default Store;
+export default store;
