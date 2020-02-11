@@ -17,6 +17,9 @@ const itemsReviews = Store._state.pageReviews.reiewsData.map(item => {
     />
   );
 });
+let state = {
+  FormCallState: false
+};
 
 const Reviews = props => {
   return (
@@ -31,9 +34,12 @@ const Reviews = props => {
           subTitle={Store._state.pageReviews.giveFetback.subTitle}
           children={Store._state.pageReviews.giveFetback.buttonName}
         />
-        <div className={style.wrapForm}>
-          <Form />
-        </div>
+        {state.FormCallState ? (
+          <div className={style.wrapForm}>
+            <Form />
+          </div>
+        ) : null}
+
         {itemsReviews}
       </div>
     </React.Fragment>

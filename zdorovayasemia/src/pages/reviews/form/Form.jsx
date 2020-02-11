@@ -52,7 +52,7 @@ const Form = () => {
             type="radio"
           />
           <Input
-            id="starx05"
+            id="star05"
             name="radio"
             onChange={() => {}}
             value="5"
