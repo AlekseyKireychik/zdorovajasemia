@@ -20,6 +20,10 @@ const itemsReviews = Store._state.pageReviews.reiewsData.map(item => {
 let state = {
   FormCallState: false
 };
+let onSchowReviewsForm = () => {
+  return (state.FormCallState = false);
+};
+console.log(state);
 
 const Reviews = props => {
   return (
@@ -29,11 +33,6 @@ const Reviews = props => {
         children={Store._state.pageReviews.info.title}
       />
       <div className={style.container}>
-        <GiveFetback
-          title={Store._state.pageReviews.giveFetback.title}
-          subTitle={Store._state.pageReviews.giveFetback.subTitle}
-          children={Store._state.pageReviews.giveFetback.buttonName}
-        />
         {state.FormCallState ? (
           <div className={style.wrapForm}>
             <Form />
@@ -41,6 +40,12 @@ const Reviews = props => {
         ) : null}
 
         {itemsReviews}
+        <GiveFetback
+          title={Store._state.pageReviews.giveFetback.title}
+          subTitle={Store._state.pageReviews.giveFetback.subTitle}
+          children={Store._state.pageReviews.giveFetback.buttonName}
+          onClick={onSchowReviewsForm}
+        />
       </div>
     </React.Fragment>
   );
