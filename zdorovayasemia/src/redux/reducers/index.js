@@ -1,4 +1,4 @@
 import { combineReducers } from "redux";
-// import reviewsShowFormReducer from "./reducers/reviewsReducer";
-const rootReducer = combineReducers({});
+import addReviewsFormData from "./reviewsFormReducer";
+const rootReducer = combineReducers({addReviewsFormData});
 export default rootReducer;

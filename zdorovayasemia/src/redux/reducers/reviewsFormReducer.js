@@ -1,23 +1,21 @@
-const SHOW = "SHOW";
-const DT_SHOW = "DT_SHOW";
-
 let initioalState = {
-  reviewsFormShow: false
 };
 
-const reviewsFormReducer = (state = initioalState, action) => {
+const addReviewsFormData = (state = initioalState, action) => {
   switch (action.type) {
-    case SHOW:
-      return state;
-    case DT_SHOW:
-      return state;
+    case ADD_REVIEWS_FORM_DATA:
+      return [...state,
+      {
+        id: action.id,
+        date: action.date,
+        name: action.name,
+        stars: action.stars,
+        title: action.title,
+        text: action.text
+      }];
     default:
       return state;
   }
 };
 
-export const reviewsFormShowActionCreator = formId => ({ type: SHOW, formId });
-export const reviewsFormDtShowActionCreator = formId => ({
-  type: DT_SHOW,
-  formId
-});
+export const addReviewsFormData;
