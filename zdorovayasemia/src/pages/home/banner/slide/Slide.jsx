@@ -1,7 +1,7 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import SlideItem from "./slideItems/SlideItem";
-import Store from "../../../store";
+import Store from "../../../../store";
 import style from "./Slide.module.css";
 
 const proprieties = {

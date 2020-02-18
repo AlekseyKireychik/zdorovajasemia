@@ -1,5 +1,5 @@
 import React from "react";
-import Store from "../../store";
+import Store from "../../../store";
 import AdvantagesItem from "./advantagesItem/AdvantagesItem";
 import style from "./Advantages.module.css";
 let mySlideElems = Store._state.pageHome.advantages.advantagesItems.map((item, index) => (

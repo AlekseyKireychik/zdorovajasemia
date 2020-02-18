@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Banner.module.css";
 import Slideshow from "./slide/Slide.jsx";
-import Store from "../../store";
+import Store from "../../../store";
 
 const Banner = props => {
   return (

@@ -1,0 +1,12 @@
+.wrapForm {
+    background: #fff;
+    box-shadow: 0px 4px 20px #eef0f2;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    max-width: 1000px;
+    width: 100%;
+  }
