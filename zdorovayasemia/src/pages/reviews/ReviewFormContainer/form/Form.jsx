@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import Button from "../../../../components/button/Button";
 import Input from "../../../../components/input/Input";
 import Textarea from "../../../../components/textarea/Textarea";
@@ -11,13 +12,13 @@ class Form extends React.Component {
       inputName: "",
       inputEmail: "",
       inputTitle: "",
-      inputRadio: "",
+      // inputRadio: "",
       textareaMessage: "",
       receivedData: {
         name: "",
         email: "",
         title: "",
-        stars: "",
+        // stars: "",
         text: ""
       }
     };
@@ -89,7 +90,7 @@ class Form extends React.Component {
             name="email"
             value={inputEmail}
           />
-          <span className={style.radioGroupTitle}>Оцените нас</span>
+          {/* <span className={style.radioGroupTitle}>Оцените нас</span>
           <div className={style.radioGroup}>
             <Input
               id="star01"
@@ -131,7 +132,7 @@ class Form extends React.Component {
               label="5"
               type="radio"
             />
-          </div>
+          </div> */}
         </div>
         <div className={style.right}>
           <Input
