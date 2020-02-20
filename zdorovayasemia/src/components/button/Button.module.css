@@ -14,12 +14,6 @@
   background: rgba(67, 164, 0, 1);
   transition: .2s all linear;
 }
-.btnPrimary:focus {
-  background: rgba(67, 164, 0, 1);
-  border: 1px solid #333E50;
-  color: #333E50;
-  transition: .2s all linear;
-}
 .btnPrimary:disabled {
   background: #ADB4BF;
   border: 1px solid #ADB4BF;

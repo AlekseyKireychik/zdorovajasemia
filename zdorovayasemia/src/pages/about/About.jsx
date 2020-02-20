@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 import InnerBanner from "../../components/innerBanner/InnerBanner";
 import Store from "../../store";
 import AboutItem from "./aboutItem/AboutItem";
@@ -24,18 +26,22 @@ let description = Store._state.pageAbout.services.map(item => {
 const About = () => {
   return (
     <React.Fragment>
-      <InnerBanner
-        bgimage={Store._state.pageAbout.info.background}
-        children={Store._state.pageAbout.info.title}
-      />
-      <div className={style.container}>
-        <h2>{Store._state.pageAbout.greeting.title}</h2>
-        <p>{Store._state.pageAbout.greeting.subTitle}</p>
-        {description}
-        <p>
-          <b>{Store._state.pageAbout.greeting.resume}</b>
-        </p>
-      </div>
+      <Header />
+      <main>
+        <InnerBanner
+          bgimage={Store._state.pageAbout.info.background}
+          children={Store._state.pageAbout.info.title}
+        />
+        <div className={style.container}>
+          <h2>{Store._state.pageAbout.greeting.title}</h2>
+          <p>{Store._state.pageAbout.greeting.subTitle}</p>
+          {description}
+          <p>
+            <b>{Store._state.pageAbout.greeting.resume}</b>
+          </p>
+        </div>
+      </main>
+      <Footer />
     </React.Fragment>
   );
 };

@@ -1,13 +1,5 @@
 import { createStore, compose } from "redux";
 import rootReducer from "./reducers/index";
-// import homeReducer from "./homeReducer";
-// import aboutReducer from "./aboutReducer";
-// import blogReducer from "./blogReducer";
-// import contactsReducer from "./contactsReducer";
-// import productsReducer from "./productsReducer";
-// import reviewsReducer from "./reviewsReducer";
-// import servicesReducer from "./servicesReducer";
-// import teamReducer from "./teamReducer";
 
 /* eslint-disable no-underscore-dangle */
 const composeEnhancers =

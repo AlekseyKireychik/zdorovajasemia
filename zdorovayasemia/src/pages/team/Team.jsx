@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 import InnerBanner from "../../components/innerBanner/InnerBanner";
 import Specialist from "../../components/specialists/specialist/Specialist";
 // import SpecialistsItems from "../../components/specialists/SpecialistItems";
@@ -22,15 +24,17 @@ const ValTeamItemConten = Store._state.pageTeam.teamData.map(item => {
 const Team = props => {
   return (
     <React.Fragment>
-      <InnerBanner
-        bgimage={Store._state.pageTeam.info.background}
-        children={Store._state.pageTeam.info.title}
-      />
-      <div className={style.container}>
-        <ul className={style.list}>
-          {ValTeamItemConten}
-        </ul>
-      </div>
+      <Header />
+      <main>
+        <InnerBanner
+          bgimage={Store._state.pageTeam.info.background}
+          children={Store._state.pageTeam.info.title}
+        />
+        <div className={style.container}>
+          <ul className={style.list}>{ValTeamItemConten}</ul>
+        </div>
+      </main>
+      <Footer />
     </React.Fragment>
   );
 };

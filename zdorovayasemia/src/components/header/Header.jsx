@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import Logo from "../logo/Logo";
-import Adress from "../adress/Adress";
 import Phone from "../phone/Phone";
 import Navigation from "../navigation/Navigation";
 import style from "./Header.module.css";
