@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Admin from "./admin/Admin";
+import Login from "./admin/login/Login";
 import Services from "./pages/services/Services";
 import Products from "./pages/products/Products";
 import Team from "./pages/team/Team";
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
+          <Route path="/login" component={Login} />
           <Route path="/admin" component={Admin} />
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />

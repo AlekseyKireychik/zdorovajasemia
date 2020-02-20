@@ -6,7 +6,6 @@
   background: #2c3045;
   color: #ffffff;
   font-size: 14px;
-  font-family: "Open Sans";
 }
 .title {
   margin: 0px;
@@ -21,7 +20,6 @@
   background: #393d53;
   max-width: 260px;
   height: calc(100vh - 76px);
-  font-family: "Open Sans";
 }
 .nav ul {
   margin: 0;
