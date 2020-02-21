@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
 import Pages from "./pages/Pages";
 import Library from "./library/Library";
@@ -26,7 +25,6 @@ const Admin = () => {
             <li><NavLink to="/admin/setings" activeClassName={style.active}>Настройки</NavLink></li>
           </ul>
         </nav>
-        <BrowserRouter>
           <article>
             <Route path="/admin/pages" component={Pages} />
             <Route path="/admin/library" component={Library} />
@@ -34,7 +32,6 @@ const Admin = () => {
             <Route path="/admin/reviews" component={Reviews} />
             <Route path="/admin/setings" component={Setings} />
           </article>
-        </BrowserRouter>
       </main>
     </Fragment>
   );
