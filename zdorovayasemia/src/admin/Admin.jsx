@@ -19,10 +19,10 @@ const Admin = () => {
       <main className={style.adminMain}>
         <nav className={style.nav}>
           <ul>          
-            <li><NavLink to="/admin/pages">Страницы</NavLink></li>
-            <li><NavLink to="/admin/library">Библиотека изображений</NavLink></li>
-            <li><NavLink to="/admin/enquiries">Сообщения</NavLink></li>
-            <li><NavLink to="/admin/reviews">Отзывы</NavLink></li>
+            <li><NavLink to="/admin/pages" activeClassName={style.active}>Страницы</NavLink></li>
+            <li><NavLink to="/admin/library" activeClassName={style.active}>Библиотека изображений</NavLink></li>
+            <li><NavLink to="/admin/enquiries" activeClassName={style.active}>Сообщения</NavLink></li>
+            <li><NavLink to="/admin/reviews" activeClassName={style.active}>Отзывы</NavLink></li>
             <li><NavLink to="/admin/setings" activeClassName={style.active}>Настройки</NavLink></li>
           </ul>
         </nav>
