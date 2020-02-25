@@ -14,6 +14,7 @@
   width: 100%;
   color: #000;
   max-width: 1200px;
+  padding: 0 30px;
   z-index: 99;
 }
 
@@ -68,4 +69,24 @@
   font-size: 16px;
   line-height: 26px;
   color: #424242;
+}
+@media screen and (max-width: 1199px) {
+  .headerNav {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .headerNav {
+    max-width: 720px;    
+  }
+}
+@media screen and (max-width: 767px) {
+  .headerNav {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .headerNav {
+    max-width: 100%;
+  }
 }

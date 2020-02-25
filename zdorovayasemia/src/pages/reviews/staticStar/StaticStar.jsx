@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "../../../components/image/Image";
-import style from "./Star.module.css";
 
 const infoStar = {
   width: 18,
@@ -10,16 +9,16 @@ const infoStar = {
   src: "..//images/icons/star-favourite.svg"
 };
 
-const Star = ({ starActive }) => {
+const StaticStar = ({ starActive }) => {
   const src = starActive ? infoStar.srcPrimary : infoStar.src;
   return <Image width={infoStar.width} height={infoStar.width} src={src} />;
 };
 
-Star.propTypes = {
+StaticStar.propTypes = {
   starActive: PropTypes.bool
 };
 
-Star.defaultProps = {
+StaticStar.defaultProps = {
   starActive: false
 };
-export default Star;
+export default StaticStar;

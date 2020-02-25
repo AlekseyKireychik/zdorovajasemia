@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "../../../../components/image/Image";
-import Star from "../../star/Star";
+import StaticStar from "../../staticStar/StaticStar";
 import style from "./Review.module.css";
 
 const infoIconUser = {
@@ -29,11 +29,11 @@ const Review = ({ date, name, title, text }) => {
             <div className={style.reviewRang}>
               <div className={style.reviewCounter}>5</div>
               <div className={style.reviewStars}>
-                <Star starActive />
-                <Star starActive />
-                <Star starActive />
-                <Star starActive />
-                <Star starActive />
+                <StaticStar starActive />
+                <StaticStar starActive />
+                <StaticStar starActive />
+                <StaticStar starActive />
+                <StaticStar starActive />
               </div>
             </div>
           </div>
