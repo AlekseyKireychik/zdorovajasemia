@@ -29,10 +29,12 @@
 .nav li {
   list-style: none;
   align-items: center;
-  transition: all 0.3 linear;
+  transition: all 0.2s linear;
 }
+
 .active {
   background: #545666;
+
 }
 .nav a {
   font-size: 16px;
@@ -46,6 +48,58 @@
 .nav li:hover,
 .nav li:active {
   background: #414457;
-  transition: all 0.3 linear ;
+  transition: all 0.2s linear;
   cursor: pointer;
 }
+.navbarProfile {
+  position: relative;
+}
+.navbarProfile ul{
+  list-style: none;
+  padding: 8px 0;
+  position: absolute;
+  margin-top: 5px;
+  left: -20px;
+  background-color: #fff;
+  border: 1px solid #e0e7e8;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+.navbarProfile ul li {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.navbarProfile ul li:last-child {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+.navbarProfile ul li:first-child {
+  padding-top: 8px;
+  border-top: 1px solid #e5e5e5;
+}
+.navbarProfileIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.2s linear;
+}
+.navbarProfileIcon:hover {
+  transition: all 0.2s linear;
+  background: #414457;
+}
+.navbarProfileIcon span:nth-child(2) {
+  margin-left: 10px;
+}
+article {
+  padding: 20px;
+}
+
