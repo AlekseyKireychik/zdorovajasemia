@@ -3,3 +3,13 @@
     object-fit: cover;
 }
 
+@media screen and (max-width: 768px) {
+    .logoImg {
+        max-width: 75px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .logoImg {
+        max-width: 50px;
+    }
+}

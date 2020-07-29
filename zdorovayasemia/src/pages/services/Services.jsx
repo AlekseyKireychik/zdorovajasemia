@@ -1,52 +1,25 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import InnerBanner from "../../components/innerBanner/InnerBanner";
-import ServiceItemBtn from "./serviceItemBtn/ServiceItemBtn";
-import ServicesItemConten from "./servicesItemContent/ServicesItemContent";
-import Store from "../../store";
-// import ServicesItemValues from "./serviceItemValues/serviceItemValues";
+import ServicesBanner from "./banner/ServicesBanner";
+import ServicesSelect from "./servicesSelect/ServicesSelect"
+import ServicesItemValues from "./serviceItemValues/serviceItemValues";
 import style from "./Services.module.css";
 
-const itemServiceTile = Store._state.pageServices.servicesDate.map(item => {
-  return (
-    <ServiceItemBtn id={item.id} key={`0${item.id}`} children={item.title} />
-  );
-});
-
-const ValServiceItemConten = Store._state.pageServices.servicesDate.map(
-  item => {
+const Services = (props) => {
     return (
-      <ServicesItemConten
-        key={`0${item.id}`}
-        data_id={item.id}
-        title={item.title}
-        description={item.description}
-        subTitle={item.subTitle}
-        list={item.list}
-        text={item.text}
-        subTitleTwo={item.subTitleTwo}
-        listTwo={item.listTwo}
-        textTwo={item.textTwo}
-      />
+        <React.Fragment>
+            <Header/>
+            <main>
+                <ServicesBanner/>
+                <div className={style.container}>
+                    <ServicesSelect />
+                    <ServicesItemValues/>
+                </div>
+            </main>
+            <Footer/>
+        </React.Fragment>
     );
-  }
-);
-
-const Services = props => {
-  return (
-    <React.Fragment>
-      <Header />
-      <main>
-        <InnerBanner bgimage="..//images/services.jpg" children="Услуги" />
-        <div className={style.container}>
-          <ul className={style.list}>{itemServiceTile}</ul>
-          {ValServiceItemConten}
-        </div>
-      </main>
-      <Footer />
-    </React.Fragment>
-  );
 };
 
 export default Services;

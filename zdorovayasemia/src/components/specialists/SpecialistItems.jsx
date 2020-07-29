@@ -1,6 +1,6 @@
 // import React from "react";
 // import Specialist from "./specialist/Specialist";
-// import Store from "../../store";
+// import Store from "store";
 
 // const SpecialistsItems = Store.pageTeam.teamData.map(item => {
 //   return (

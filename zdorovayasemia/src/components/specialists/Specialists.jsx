@@ -1,25 +1,27 @@
 import React from "react";
 import style from "./Specialists.module.css";
 import { NavLink } from "react-router-dom";
-import Store from "../../store";
+import Store from "store";
 import Specialist from "./specialist/Specialist";
 // import SpecialistsItems from "./specialists/SpecialistItems";
 
-const ValTeamItemConten = Store._state.pageTeam.teamData.map(item => {
-  return (
-    <Specialist
-      key={"0" + item.id}
-      name={item.name}
-      src={item.img}
-      width="270"
-      height="inherit"
-      position={item.position}
-      description={item.description}
-    />
-  );
-});
+// const ValTeamItemConten = Store.initialState._state.pageTeam.teamData.map(
+//   (item) => {
+//     return (
+//       <Specialist
+//         key={"0" + item.id}
+//         name={item.name}
+//         src={item.img}
+//         width="270"
+//         height="inherit"
+//         position={item.position}
+//         description={item.description}
+//       />
+//     );
+//   }
+// );
 
-const Specialists = props => {
+const Specialists = (props) => {
   return (
     <section id={props.blok_id} className={style.specialists}>
       <div className={style.container}>
@@ -29,8 +31,8 @@ const Specialists = props => {
         </NavLink>
       </div>
       <ul className={style.container}>
-        {ValTeamItemConten[0]}
-        {ValTeamItemConten[1]}
+        {/* {ValTeamItemConten[0]}
+        {ValTeamItemConten[1]} */}
       </ul>
     </section>
   );

@@ -1,4 +1,9 @@
-import { combineReducers } from "redux";
+import {combineReducers} from "redux";
 // import addReviewsFormData from "./reviewsFormReducer";
-const rootReducer = combineReducers({});
+import auth from "./auth";
+
+const rootReducer = combineReducers({
+    auth,
+});
+
 export default rootReducer;

@@ -1,12 +1,24 @@
 import React from "react";
-import style from "./SlideItem.module.css";
+import PropTypes from "prop-types";
 
 const SlideItem = (props) => {
-  return (
-    <div className="each-slide">
-      <span>{props.text}</span>
-    </div>
-  );
+
+    const {text} = props;
+
+    return (
+        <div className="each-slide">
+            <span>{text}</span>
+        </div>
+    );
+};
+
+
+SlideItem.propTypes = {
+    text: PropTypes.string
+};
+
+SlideItem.defaultProps = {
+    text: ""
 };
 
 export default SlideItem;

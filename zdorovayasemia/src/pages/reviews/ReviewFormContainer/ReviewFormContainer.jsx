@@ -9,7 +9,7 @@ class ReviewFormContainer extends React.Component {
     super(props);
     this.state = {
       FormCallState: false,
-      FormCallStateHide: true
+      FormCallStateHide: true,
     };
   }
   onSchowReviewsForm = () => {
@@ -22,9 +22,13 @@ class ReviewFormContainer extends React.Component {
       <React.Fragment>
         {this.state.FormCallStateHide ? (
           <GiveFetback
-            title={Store._state.pageReviews.giveFetback.title}
-            subTitle={Store._state.pageReviews.giveFetback.subTitle}
-            children={Store._state.pageReviews.giveFetback.buttonName}
+            title={Store.initialState._state.pageReviews.giveFetback.title}
+            subTitle={
+              Store.initialState._state.pageReviews.giveFetback.subTitle
+            }
+            children={
+              Store.initialState._state.pageReviews.giveFetback.buttonName
+            }
             onClick={this.onSchowReviewsForm}
           />
         ) : null}

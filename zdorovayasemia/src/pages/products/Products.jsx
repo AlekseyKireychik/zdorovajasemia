@@ -3,21 +3,22 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import InnerBanner from "../../components/innerBanner/InnerBanner";
 import Image from "../../components/image/Image";
-import Store from "../../store";
 import style from "./Products.module.css";
 
-const Products = props => {
+const Products = (props) => {
   return (
     <React.Fragment>
       <Header />
       <main>
         <InnerBanner
-          bgimage={Store._state.pageProducts.info.background}
-          children={Store._state.pageProducts.info.title}
+          bgimage={storeDate.date.pageProducts.info.background}
+          children={storeDate.date.pageProducts.info.title}
         />
         <div className={style.container}>
           <section className={style.titleGroup}>
-            <h2>{Store._state.pageProducts.category.titleCategory}</h2>
+            <h2>
+              {storeDate.date.pageProducts.category.titleCategory}
+            </h2>
           </section>
           <section className={style.product}>
             <div className={style.productText}>

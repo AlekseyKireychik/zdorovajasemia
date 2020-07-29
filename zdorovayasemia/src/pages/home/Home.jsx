@@ -2,31 +2,51 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Banner from "./banner/Banner";
-import Greeting from "./greeting/Greeting";
 import Advantages from "./advantages/Advantages";
-import Typesmassage from "../home/typesmassage/Typesmessage";
+import TypesMassage from "../home/typesmassage/TypesMassage";
 import Specialists from "../../components/specialists/Specialists";
 import News from "../../components/news/News";
-import Store from "../../store";
+import HomeGreeting from './homeGreeting/HomeGreeting';
+import {connect} from "react-redux";
+import PropTypes from "prop-types";
 
-const Home = props => {
-  return (
-    <React.Fragment>
-      <Header />
-      <main>
-        <Banner />
-        <Greeting
-          title={Store._state.pageHome.greeting.title}
-          text={Store._state.pageHome.greeting.text}
-        />
-        <Advantages />
-        <Specialists blok_id="specialist-home" />
-        <Typesmassage />
-        <News />
-      </main>
-      <Footer />
-    </React.Fragment>
-  );
+const Home = (props) => {
+
+    const {status, profile} = props;
+
+    return (
+        <React.Fragment>
+            <Header/>
+            <main>
+                <div>{status} -- {profile}</div>
+                <Banner/>
+                <HomeGreeting/>
+                <Advantages />
+                <Specialists blok_id="specialist-home" />
+                <TypesMassage />
+                <News />
+            </main>
+            <Footer />
+        </React.Fragment>
+    );
 };
 
-export default Home;
+
+Home.propTypes = {
+    status: PropTypes.string,
+    profile: PropTypes.string
+};
+
+Home.defaultProps = {
+    status: "",
+    profile: ""
+};
+
+const mapStateToProps = state => ({
+    status: state.auth.status,
+    profile: state.auth.profile.value
+});
+
+const mapDispatchToProps = dispatch => ({});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

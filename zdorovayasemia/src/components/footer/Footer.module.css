@@ -5,19 +5,14 @@ footer {
   line-height: 18px;
   padding: 50px 0 0;
 }
-.container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+.footerContent {
+  flex-direction: column;
+  width: 100%;
 }
-.container:nth-child(1) {
+.footerTop {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
   padding-bottom: 20px;
   border-bottom: 1px solid #80838d;
 }
@@ -92,16 +87,32 @@ footer {
 .contactItem:first-child img {
   width: 25px;
 }
-.socialList {
+.socialBox {
+  text-align: left;
+}
+.socialBox span{
+  display: block;
+  margin-bottom: 15px;
+}
+.footerNav {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 }
-.socialItem {
-  margin-left: 10px;
+.footerNav li {
+  margin-right: 20px;
+}
+.footerNav li a{
+  color: #80838d;
+  transition: 0.25s all linear;
+  text-decoration: none;
+}
+.footerNav li a:hover {
+  color: #95ce5a;
+  transition: 0.25s all linear;
 }
 .copir{
   margin: 10px auto;
@@ -109,4 +120,37 @@ footer {
   text-align: center;
   font-size: 12px;
   line-height: 14px;
+}
+
+@media screen and (max-width: 991px) {
+  .footerTop {
+    flex-wrap: wrap;
+  }
+  .adresslist {
+    flex-basis: 50%;
+  }
+  .contactList {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+  .socialBox {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .socialBox span {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .adresslist {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+  .contactList {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
 }

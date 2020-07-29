@@ -1,0 +1,129 @@
+.socialList {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.socialItem {
+    margin-left: 10px;
+}
+.socialItem:first-child {
+    margin-left: 0px;
+}
+.socialItem a {
+    transition: all .25s;
+}
+.socialItem a svg {
+    border-radius: 50%;
+}
+
+/* fb */
+.socialItem .fb:hover svg {
+    border-color: #365B97;
+    box-shadow: 0 0 10px #365B97;
+    transition: all .25s;
+}
+.socialItem .fb:hover svg g{
+    opacity: 0.8;
+}
+.socialItem .fb:hover svg circle{
+    stroke: #365B97;
+    fill: #365B97;
+    transition: all .25s;
+}
+.socialItem .fb:hover svg path {
+    fill: white;
+}
+
+/* wk */
+.socialItem .wk:hover svg {
+    border-color: #4E7498;
+    box-shadow: 0 0 10px #4E7498;
+    transition: all .25s;
+}
+.socialItem .wk:hover svg g{
+    opacity: 0.8;
+}
+.socialItem .wk:hover svg circle{
+    stroke: #4E7498;
+    fill: #4E7498;
+    transition: all .25s;
+}
+.socialItem .wk:hover svg path {
+    fill: white;
+}
+
+/* ok */
+.socialItem .ok:hover svg {
+    border-color: #ED8220;
+    box-shadow: 0 0 10px #ED8220;
+    transition: all .25s;
+}
+.socialItem .ok:hover svg g{
+    opacity: 0.8;
+}
+.socialItem .ok:hover svg circle{
+    stroke: #ED8220;
+    fill: #ED8220;
+    transition: all .25s;
+}
+.socialItem .ok:hover svg path {
+    fill: white;
+}
+
+/* tl */
+.socialItem .tl:hover svg {
+    border-color: #50B4EF;
+    box-shadow: 0 0 10px #50B4EF;
+    transition: all .25s;
+}
+.socialItem .tl:hover svg g{
+    opacity: 0.8;
+}
+.socialItem .tl:hover svg circle{
+    stroke: #50B4EF;
+    fill: #50B4EF;
+    transition: all .25s;
+}
+.socialItem .tl:hover svg path {
+    fill: white;
+}
+
+/* tw */
+.socialItem .tw:hover svg {
+    border-color: #50B4EF;
+    box-shadow: 0 0 10px #50B4EF;
+    transition: all .25s;
+}
+.socialItem .tw:hover svg g{
+    opacity: 0.8;
+}
+.socialItem .tw:hover svg circle{
+    stroke: #50B4EF;
+    fill: #50B4EF;
+    transition: all .25s;
+}
+.socialItem .tw:hover svg path {
+    fill: white;
+}
+
+
+/* yt */
+.socialItem .yt:hover svg {
+    border-color: #FF0000;
+    box-shadow: 0 0 10px #FF0000;
+    transition: all .25s;
+}
+.socialItem .yt:hover svg g{
+    opacity: 0.8;
+}
+.socialItem .yt:hover svg circle{
+    stroke: #FF0000;
+    fill: #FF0000;
+    transition: all .25s;
+}
+.socialItem .yt:hover svg path {
+    fill: white;
+}

@@ -28,6 +28,11 @@ const Header = () => {
           </div>
           <Navigation />
         </div>
+        <div className={style.burgerBtn}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
   );

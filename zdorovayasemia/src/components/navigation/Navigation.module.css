@@ -1,57 +1,85 @@
 .navigation {
-  width: 100%;
+    width: 100%;
 }
 
 .nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  z-index: 99;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 99;
 }
 
 .nav li {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .nav a {
-  text-decoration: none;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  font-size: 16px;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 15px 15px 15px 15px;
-  box-sizing: border-box;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #424242;
-  transition: 0.2s all linear;
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 15px 15px 15px;
+    box-sizing: border-box;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #424242;
+    transition: 0.2s all linear;
 }
-.nav li:last-child a {
-  padding-right: 0;
-}
+
 
 .nav a:hover,
 .nav a.active {
-  border-color: #ebebeb;
-  color: rgba(67, 164, 0, 0.95);
-  transition: 0.2s all linear;
+    border-color: #ebebeb;
+    color: rgba(67, 164, 0, 0.95);
+    transition: 0.2s all linear;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 992px) {
+    .nav li:last-child a {
+        padding-right: 0;
+    }
 }
+
 @media screen and (max-width: 991px) {
-  .nav {
-    align-items: flex-start;
-    flex-direction: column;
-  }
+    .nav {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav li {
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .nav li a {
+        justify-content: center;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        cursor: pointer;
+        white-space: nowrap;
+        border-top: 1px solid #ebebeb;
+    }
+
+    .nav li:first-child a {
+        border-top: 1px solid transparent;
+    }
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 768px) {
 }
+
 @media screen and (max-width: 575px) {
+    .nav li a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        justify-content: flex-start;
+    }
 }
